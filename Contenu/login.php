@@ -36,8 +36,8 @@
                 </div>
                 <button type="submit" class="btn btn-primary">Connexion</button>
                 <div class="parametre">
-                    <span><a href="signup.php">S'inscrire</a></span>
-                    <span><a href="">Mot de passe oublié ?</a><a href="">aide</a></span>
+                    <span class="span1"><a href="signup.php">S'inscrire</a></span>
+                    <span class="span2"><a href="">Mot de passe oublié ?</a></span>
                 </div>
             </form>
         </div>

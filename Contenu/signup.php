@@ -64,6 +64,9 @@
 
                 <button type="submit" class="btn btn-primary">S'inscrire</button>
             </form>
+                <div class="parametre2">
+                    <span><a href="login.php">Se Connecter</a></span>
+                </div>
         </div>
 </div>
     

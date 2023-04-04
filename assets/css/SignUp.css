@@ -129,9 +129,24 @@ input[type="checkbox"]{
 
 .parametre span a{
     color: #ba6215;
+    text-decoration: none; 
+}
+
+/* Boutton connexion sur page s'inscrire */
+
+.parametre2{
+    display: flex;
+    width: 50%;
+
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-left: 10px;
+}
+
+.parametre2 span a{
+    color: #ba6215;
     text-decoration: none;
-    
-    
 }
 
 @media screen and (max-width: 600px) {
@@ -184,6 +199,16 @@ input[type="checkbox"]{
     .mb-3{
         padding: 5px;
     }
+    .parametre{
+        position: relative;
+        display: flex;
+        width: 100%;
+        margin-bottom: 10px;
+        font-size: 18px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        padding: 20px;
+    }
+  
 }
 
 @media screen and (max-width: 950px) and (min-width: 610px){
@@ -237,6 +262,7 @@ input[type="checkbox"]{
 }
 
 }
+
 @media screen and (max-width: 1280px) and (min-width: 1024px){
     .mb-3{
         padding: 5px;
@@ -253,4 +279,19 @@ input[type="checkbox"]{
         margin-bottom: 5px;
         border-radius: 20px;
 }
+}
+
+
+
+@media screen and (width: 280px){ 
+    .parametre{
+        font-size: 12px;
+    }
+}
+
+@media screen and (width: 1024px ){
+    .parametre{
+        font-size: 15px;
+    }
+    
 }
