@@ -10,14 +10,25 @@
 <body>
     <!-- NAV VERTICALE -->
     <div class="nav_vertical">
-            <p>😍❤️Lorem ipsum dolor sit amet consectetur adipisicing e
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem animi magnam natus consequatur veniam quasi ducimus impedit? Illum similique alias laboriosam aperiam perferendis tempora, temporibus a architecto ipsa, libero necessitatibus.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem animi magnam natus consequatur veniam quasi ducimus impedit? Illum similique alias laboriosam aperiam perferendis tempora, temporibus a architecto ipsa, libero necessitatibus.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem animi magnam natus consequatur veniam quasi ducimus impedit? Illum similique alias laboriosam aperiam perferendis tempora, temporibus a architecto ipsa, libero necessitatibus.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem animi magnam natus consequatur veniam quasi ducimus impedit? Illum similique alias laboriosam aperiam perferendis tempora, temporibus a architecto ipsa, libero necessitatibus.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem animi magnam natus consequatur veniam quasi ducimus impedit? Illum similique alias laboriosam aperiam perferendis tempora, temporibus a architecto ipsa, libero necessitatibus.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem animi magnam natus consequatur veniam quasi ducimus impedit? Illum similique alias laboriosam aperiam perferendis tempora, temporibus a architecto ipsa, libero necessitatibus.    
-            lit. Voluptatem animi magnam natus consequatur veniam quasi ducimus impedit? Illum similique alias laboriosam aperiam perferendis tempora, temporibus a architecto ipsa, libero necessitatibus.</p>
+        <!-- Insertion de l'image -->
+            <div class="logo">
+                <img src="../assets/image/logo_last.png" alt="">
+            </div>
+         
+        <!-- Menu deroulant -->
+
+            <div class="scroll_menu">
+                <ul>
+                <a href="#" class="active">Dashboard</a>
+                <a href="" class='link'>Messagerie</a>
+                <a href="#">Répertoire</a>
+                <a href="#">Paramètre</a>
+                </ul>
+            </div>
+
+
+
+
     </div>
 
     <!-- NAV Horizontale -->
