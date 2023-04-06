@@ -60,14 +60,18 @@
         <nav class="navbar">
             <div class="session">
                     <a href=""><img class="img_profile" src="../assets/image/profile_vide.jpg" alt=""></a>
+                    <div class="espace"></div>
                     <a href=""><img class="img_deconnexion" src="../assets/image/deconnexion.jpg" alt=""></a>
             </div>
-            <!--
+            
             <div class="info">
-                <p>Nombre SMS </p>
+                <div class="text">
+                    <p>SMS restants : </p>
+                </div>
+                
                 <a href="">Acheter Pack</a>  
             </div>
-            -->
+            
         </nav>
         <div class="contain">
 
