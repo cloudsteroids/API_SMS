@@ -1,203 +1,530 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CS'Texto</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" href="./slick/slick-theme.css">
-    <script src="./assets/js/bootstrap.min.js"></script>
-    <script src="./slick/slick.js"></script>
-    <script src="./slick/slick.min.js"></script>
-    <script src="./assets/js/js/fil-js.js"></script>
-    
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>CS'Texto</title>
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon-16x16.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+
 </head>
-<body style="height: 1080px;">
 
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top lineaire-simple" >
-            <div class="container-fluid ">
-                <div class="row">
-                    <div class="col-4 " >
-                        <a class="navbar-brand" href="#">
-                            <img src="./assets/image/logo.png" alt="Logo" width="65" height="65">
-                        </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                    </div>
-                    <div class="col-6 navbar">
-                        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Accueil</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Bon à Savoir</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Packs</a>
-                                </li>  
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Contact</a>
-                                </li>  
-                            </ul>
-                        </div>   
-                    </div>
-                    <div class=" col-2">
-                        <div>
-                            <button type="button" class="btn btn-primary">Connexion</button>
-                        </div>   
-                    </div>
-                </div>
-            </div>
-          </nav>
-   
-    <div class="container-fluid" style = "margin-top: 5px;">
-        <div class="row">
-            <div class="col-7" >
-                <h3 id="lib">Bienvenue API SMS</h3>
-                <p>Vous êtes au bon endroit pour envoyer des SMS à des centaines, des milliers, 
-                    voire des millions de personnes. Notre application innovante et facile à utiliser 
-                    vous permet de créer et d'envoyer des campagnes SMS à grande échelle avec 
-                    une précision et une rapidité inégalées.
-                </p>
-                <button type="button" class="btn-inscrire">S'inscrire</button>
-                <img src="./assets/image/image6.png" alt="hommephone" width="860" height="500">
-            </div>
-            <div class="col-2" >
-                <img src="./assets/image/image1.png" alt="hommephone" width="50" height="50">
-                <img src="./assets/image/image2.png" alt="hommephone" width="50" height="50">
-                <img src="./assets/image/image3.png" alt="hommephone" width="50" height="50">
-            </div>
-            <div class="col-2" >
-                <img src="./assets/image/image5.png" alt="hommephone" width="300" height="150">
-                <img src="./assets/image/image4.jpeg" alt="hommephone" width="250" height="150">
-            </div>
-        </div>
-    </div>       
+<body>
 
-    <div class="container-fluid" style = "margin-top: 50px;">
-        <h3>À qui s’adresse notre solution SMS ?</h3>
-        <p>Idéale pour vous rapprocher de vos équipes et de votre clientèle, cette solution convient à quiconque souhaite profiter d’un moyen de communication simple,
-            flexible, réactif et aux multiples usages. Voici quelques exemples:
-        </p>
-        <div class="row">
-            <div class="col " > 
-                <img src="./assets/image/banque.png" alt="banque" width="122" height="122">
-                <p><span class="bons">Aux banques</span>, pour l’envoi de codes 
-                    de validation pour les paiements en ligne,
-                    d’informations concernant les mouvements
-                    bancaires, etc.                    
-                </p>
-            </div>
-            <div class="col" > 
-                <img src="./assets/image/agencecom.png" alt="agence de communication" width="122" height="122">
-                <p><span class="bons">Aux agences de communication</span>, pour
-                    l’envoi d’annonces d’événements, 
-                    de résultats d’un jeu-concours, de
-                    communications internes et externes,
-                    etc.                    
-                </p>
-            </div>
-            <div class="col " >
-                <img src="./assets/image/sac.png" alt="sac" width="122" height="122">
-                <p><span class="bons">Commerçant·es</span>, pour l’envoi d’offres
-                    promotionnelles, de notifications d’ouvertures
-                    exceptionnelles, etc.
-                </p>
-              
-            </div>
-            <div class="col" > 
-                <img src="./assets/image/santé.png" alt="santé" width="122" height="122">
-                <p><span class="bons">Aux professionnels de santé</span>, pour 
-                    l’envoi de rappels de rendez-vous, 
-                    de résultats, de mots de passe uniques
-                    pour accéder aux plateformes sécurisées,
-                     etc.
-                </p>
-            </div>
-        </div>
-        
-        <div class="container-fluid autoplay">
-            <h3>Comment s'y prendre?</h3>
-            <p>Simple et rapide, juste importe tes contacts et ta configuration est faite.</p>
-            <div class="savoir">
-                    <div class="box box1"> 
-                        <h4>Etape 1</h4>
-                        <p>Remplir le formulaire d'inscription et créer votre compte</p>
-                    </div>
-                    <div class="box box2">
-                        <h4>Etape 2</h4>
-                        <p>Importer les contacts selon le model excel</p>
-                    </div>
-                    <div class="box box3"> 
-                        <h4>Etape 3</h4>
-                        <p>Acheter un pack SMS</p>
-                    </div>
-                    <div class="box box4"> 
-                        <h4>Etape 4</h4>
-                        <p>Sélectionner un ou plusieurs destinataires  pour envoyer  les messages</p>
-                    </div>
-            </div>
-        </div>
-    </div>
+    <header id="header" class="header d-flex align-items-center">
 
-    <div class="container-fluid Packs" >
-        <div class="row">
-            <div class="col-12" >
-                <h3 id="pack">Une tarification souple et dégressive</h3>
-                <p id="pack1">Chaque nouvelle souscription au pack sms augmente le quota sms de la précédente.</p>
-            </div>
-        </div>
-
-    </div>
-
-    <div class="container-fluid Contact" >
-        <div class="row">
-            <div class="col-12" >
-                <h3>Contact</h3>
-            </div>
-            <div>
-
-            </div>
-        </div>
-
-    </div>
-
-
-    <footer >
-        <div class="piedpage">
-            <h3>CS'Texto</h3>
-            <p>CS'Texto votre service de messagerie </p>
-            <ul class="socials">
-                <li><a href="https://www.facebook.com/CloudSteroids2020"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+        <a href="index.php" class="logo d-flex align-items-center">
+            <!-- Uncomment the line below if you also wish to use an image logo -->
+            <img src="assets/image/logo_last.png" alt=""> 
+            <!-- <h1>CS'Texto<span>.</span></h1>-->
+        </a>
+        <nav id="navbar" class="navbar">
+            <ul>
+            <li><a href="#hero">Accueil</a></li>
+            <li><a href="#services">Bon à savoir</a></li>
+            <li><a href="#pricing">Pack</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="contenu/login.php">connexion</a></li>
             </ul>
-            <div class="footer-bottom">
-                <p>copyright &copy;2023 <a href="#">Cs'texto</a>  </p>
+        </nav><!-- .navbar -->
+
+        <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+        </div>
+    </header><!-- End Header -->
+    <!-- End Header -->
+
+  <!-- ======= Accueil ======= -->
+    <section id="hero" class="hero">
+        <div class="container position-relative">
+        <div class="row gy-5" data-aos="fade-in">
+            <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start">
+            <h2>Bienvenue à <span>CS'Texto</span></h2>
+            <p>Vous êtes au bon endroit pour envoyer des SMS à des centaines, des milliers, 
+                voire des millions de personnes. Notre application innovante et facile à utiliser 
+                vous permet de créer et d'envoyer des campagnes SMS à grande échelle avec 
+                une précision et une rapidité inégalées.</p>
+            <div class="d-flex justify-content-center justify-content-lg-start">
+                <a href="contenu/signup.php" class="btn-get-started">S'inscrire</a>
+                <a href="https://www.youtube.com/watch?v=LUI6QR7kOBA" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Régarder la Video</span></a>
             </div>
-            <div class="footer-menu">
-                <ul class="f-menu">
-                    <li><a href="">Accueil</a></li>
-                    <li><a href="">Bon à Savoir</a></li>
-                    <li><a href="">Packs</a></li>
-                    <li><a href="">Contact</a></li>
-                 </ul>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2">
+            <img src="assets/img/hero-img.svg" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="100">
             </div>
         </div>
-    </footer>
+        </div>
 
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="./slick/slick.min.js"></script>
-<script type="text/javascript" src="./assets/js/js/fil-js.js"></script>
+        <div class="icon-boxes position-relative">
+        <div class="container position-relative">
+            <div class="row gy-4 mt-5">
+
+            <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="icon-box">
+                <div class="icon"><i class="bi bi-balloon-heart"></i></div>
+                <h4 class="title"><a href="" class="stretched-link">Simple</a></h4>
+                </div>
+            </div><!--End Icon Box -->
+
+            <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="icon-box">
+                <div class="icon"><i class="bi bi-gem"></i></div>
+                <h4 class="title"><a href="" class="stretched-link">Rapide</a></h4>
+                </div>
+            </div><!--End Icon Box -->
+
+            <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon-box">
+                <div class="icon"><i class="bi bi-award"></i></div>
+                <h4 class="title"><a href="" class="stretched-link">Professionnel</a></h4>
+                </div>
+            </div><!--End Icon Box -->
+
+            <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                <div class="icon-box">
+                <div class="icon"><i class="bi bi-cash-coin"></i></div>
+                <h4 class="title"><a href="" class="stretched-link">Moins couteux</a></h4>
+                </div>
+            </div><!--End Icon Box -->
+
+            </div>
+        </div>
+        </div>
+
+        </div>
+    </section>
+  <!-- End Accueil -->
+
+     <main id="main">
+
+            <!-- ======= bon à savoir ======= -->
+        <section id="services" class="services sections-bg">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-header">
+                    <h2>À qui s’adresse notre solution SMS ?</h2>
+                    <p>Idéale pour vous rapprocher de vos équipes et de votre clientèle, cette solution convient à quiconque souhaite profiter d’un moyen de communication simple,
+                        flexible, réactif et aux multiples usages. Voici quelques exemples:
+                    </p>
+                </div>
+
+                <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item  position-relative">
+                    <div class="icon">
+                        <i class="bi bi-activity"></i>
+                    </div>
+                    <h3>Aux banques</h3>
+                    <p>pour l’envoi de codes 
+                        de validation pour les paiements en ligne,
+                        d’informations concernant les mouvements
+                        bancaires, etc.                    
+                    </p>
+                    </div>
+                </div><!-- End Service Item -->
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item position-relative">
+                        <div class="icon">
+                            <i class="bi bi-broadcast"></i>
+                        </div>
+                        <h3>Aux agences de communication</h3>
+                        <p>Pour l’envoi d’annonces d’événements, 
+                            de résultats d’un jeu-concours, de
+                            communications internes et externes,
+                            etc.
+                        </p>
+                        </div>
+                </div><!-- End Service Item -->
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item position-relative">
+                        <div class="icon">
+                            <i class="bi bi-shop"></i>
+                        </div>
+                        <h3>Commerçant·es</h3>
+                        <p>Pour l’envoi d’offres
+                            promotionnelles, de notifications d’ouvertures
+                            exceptionnelles, etc.
+                        </p>
+                    </div>
+                </div><!-- End Service Item -->
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item position-relative">
+                        <div class="icon">
+                            <i class="bi bi-hospital"></i>
+                        </div>
+                        <h3>Aux professionnels de santé</h3>
+                        <p>Pour l’envoi de rappels de rendez-vous, 
+                            de résultats, de mots de passe uniques
+                            pour accéder aux plateformes sécurisées,
+                            etc..
+                        </p>
+                    </div>
+                </div><!-- End Service Item -->
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item position-relative">
+                    <div class="icon">
+                        <i class="bi bi-box-seam"></i>
+                    </div>
+                    <h3>Aux professionnels de la logistique</h3>
+                    <p>Pour l’envoi d’informations et de confirmations de livraison, de notifications de retard, etc.</p>
+                    </div>
+                </div><!-- End Service Item -->
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item position-relative">
+                    <div class="icon">
+                        <i class="bi bi-airplane"></i>
+                    </div>
+                    <h3>Aux agences de voyage</h3>
+                    <p>Pour l’envoi de confirmations de réservation, de billets électroniques, etc.</p>
+                    </div>
+                </div><!-- bon à savoir Item -->
+
+                </div>
+
+            </div>
+        </section><!-- end bon à savoir-->
+
+            <!-- ======= box bon à savoir ======= -->
+        <section id="testimonials" class="testimonials">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-header">
+                <h2>Comment s'y prendre?</h2>
+                <p>Simple et rapide, juste importe tes contacts et ta configuration est faite.</p>
+                </div>
+
+                <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                    <div class="testimonial-wrap">
+                        <div class="testimonial-item">
+                        <div class="d-flex align-items-center">
+                            <div>
+                            <h3>Etape 1</h3>
+                            </div>
+                        </div>
+                        <p>
+                            <i class="bi bi-quote quote-icon-left"></i>
+                                Remplir le formulaire d'inscription et créer votre compte
+                            <i class="bi bi-quote quote-icon-right"></i>
+                        </p>
+                        </div>
+                    </div>
+                    </div><!-- End box bon à savoir-->
+
+                    <div class="swiper-slide">
+                    <div class="testimonial-wrap">
+                        <div class="testimonial-item">
+                        <div class="d-flex align-items-center">
+                            <div>
+                            <h3>Etape 2</h3>
+                            </div>
+                        </div>
+                        <p>
+                            <i class="bi bi-quote quote-icon-left"></i>
+                                Importer les contacts selon le model excel
+                            <i class="bi bi-quote quote-icon-right"></i>
+                        </p>
+                        </div>
+                    </div>
+                    </div><!-- End box bon à savoir -->
+
+                    <div class="swiper-slide">
+                    <div class="testimonial-wrap">
+                        <div class="testimonial-item">
+                        <div class="d-flex align-items-center">
+                            <div>
+                            <h3>Etape 3</h3>
+                            </div>
+                        </div>
+                        <p>
+                            <i class="bi bi-quote quote-icon-left"></i>
+                                Acheter un pack SMS selon votre budget sur le site
+                            <i class="bi bi-quote quote-icon-right"></i>
+                        </p>
+                        </div>
+                    </div>
+                    </div><!-- End box bon à savoir -->
+
+                    <div class="swiper-slide">
+                    <div class="testimonial-wrap">
+                        <div class="testimonial-item">
+                        <div class="d-flex align-items-center">
+                            <div>
+                            <h3>Etape 4</h3>
+                            </div>
+                        </div>
+                        <p>
+                            <i class="bi bi-quote quote-icon-left"></i>
+                            Sélectionner un ou plusieurs destinataires  pour envoyer  les messages
+                            <i class="bi bi-quote quote-icon-right"></i>
+                        </p>
+                        </div>
+                    </div>
+                    </div><!-- End box bon à savoir -->
+
+                </div>
+                <div class="swiper-pagination"></div>
+                </div>
+
+            </div>
+        </section><!-- End box bon à savoir-->
+
+            <!-- ======= Pricing Section ======= -->
+        <section id="pricing" class="pricing sections-bg">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-header">
+                <h2>Une tarification souple et dégressive</h2>
+                <p>Chaque nouvelle souscription au pack sms augmente le quota précédent.</p>
+                </div>
+
+                <div class="row g-4 py-lg-5" data-aos="zoom-out" data-aos-delay="100">
+
+                <div class="col-lg-4">
+                    <div class="pricing-item">
+                    <h3>Small</h3>
+                    <div class="icon">
+                        <i class="bi bi-emoji-laughing"></i>
+                    </div>
+                    <h4><sup>Fcfa</sup>2000<span> / souscription</span></h4>
+                    <ul>
+                        <li><i class="bi bi-check"></i> 80 Sms</li>
+                        <li><i class="bi bi-check"></i> Support 7/24</li>
+                        <li><i class="bi bi-check"></i> Forfait Illimité</li>
+                    </ul>
+                    <div class="text-center"><a href="#" class="buy-btn">Achéter</a></div>
+                    </div>
+                </div><!-- End Pricing Item -->
+
+                <div class="col-lg-4">
+                    <div class="pricing-item featured">
+                    <h3>Premium</h3>
+                    <div class="icon">
+                        <i class="bi bi-gem"></i>
+                    </div>
+
+                    <h4><sup>Fcfa</sup>5000<span> / souscription</span></h4>
+                    <ul>
+                        <li><i class="bi bi-check"></i> 1000 Sms</li>
+                        <li><i class="bi bi-check"></i> Support 7/24</li>
+                        <li><i class="bi bi-check"></i>Forfait Illimité</li>
+                    </ul>
+                    <div class="text-center"><a href="#" class="buy-btn">Achéter</a></div>
+                    </div>
+                </div><!-- End Pricing Item -->
+
+                <div class="col-lg-4">
+                    <div class="pricing-item">
+                    <h3>mini</h3>
+                    <div class="icon">
+                        <i class="bi bi-emoji-smile"></i>
+                    </div>
+                    <h4><sup>Fcfa</sup>3000<span> / souscription</span></h4>
+                    <ul>
+                        <li><i class="bi bi-check"></i> 150 Sms</li>
+                        <li><i class="bi bi-check"></i> Support 7/24</li>
+                        <li><i class="bi bi-check"></i> Forfait Illimité</li>
+                    </ul>
+                    <div class="text-center"><a href="#" class="buy-btn">Achéter </a></div>
+                    </div>
+                </div><!-- End Pricing Item -->
+
+                </div>
+
+            </div>
+        </section><!-- End Pricing Section -->
+
+            <!-- ======= Contact Section ======= -->
+        <section id="contact" class="contact">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-header">
+                <h2>Contact</h2>
+                <p>Pour tous soucis, laissez-nous un message.</p>
+                </div>
+
+                <div class="row gx-lg-0 gy-4">
+
+                <div class="col-lg-4">
+
+                    <div class="info-container d-flex flex-column align-items-center justify-content-center">
+                    <div class="info-item d-flex">
+                        <i class="bi bi-geo-alt flex-shrink-0"></i>
+                        <div>
+                        <h4>Location:</h4>
+                        <p>A108 rue 05, Abidjan, Cocody Faya</p>
+                        </div>
+                    </div><!-- End Info Item -->
+
+                    <div class="info-item d-flex">
+                        <i class="bi bi-envelope flex-shrink-0"></i>
+                        <div>
+                        <h4>Email:</h4>
+                        <p>c-mahideo@cloudsteroids.com</p>
+                        </div>
+                    </div><!-- End Info Item -->
+
+                    <div class="info-item d-flex">
+                        <i class="bi bi-phone flex-shrink-0"></i>
+                        <div>
+                        <h4>Contact:</h4>
+                        <p>+225 587615933</p>
+                        </div>
+                    </div><!-- End Info Item -->
+
+                    <div class="info-item d-flex">
+                        <a href="https://www.facebook.com/CloudSteroids2020" class="facebook"><i class="bi bi-facebook"></i></a>
+                        <div>
+                        <h4>CS'Texto</h4>
+                        </div>
+                    </div><!-- End Info Item -->
+                    </div>
+
+                </div>
+
+                <div class="col-lg-8">
+                    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                        <input type="text" name="name" class="form-control" id="name" placeholder="Nom" required>
+                        </div>
+                        <div class="col-md-6 form-group mt-3 mt-md-0">
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
+                        </div>
+                    </div>
+                    <div class="form-group mt-3">
+                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Objet" required>
+                    </div>
+                    <div class="form-group mt-3">
+                        <textarea class="form-control" name="message" rows="7" placeholder="Message" required></textarea>
+                    </div>
+                    <div class="my-3">
+                        <div class="loading">Chargement</div>
+                        <div class="error-message"></div>
+                        <div class="sent-message">Votre message a bien été envoyé. Merci!</div>
+                    </div>
+                    <div class="text-center"><button type="submit">Envoyer</button></div>
+                    </form>
+                </div><!-- End Contact Form -->
+
+                </div>
+
+            </div>
+        </section><!-- End Contact Section -->
+
+     </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-info">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span>CS'Texto</span>
+          </a>
+          <p>votre service de messagerie </p>
+          <div class="social-links d-flex mt-4">
+            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="https://www.facebook.com/CloudSteroids2020" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Menu </h4>
+          <ul>
+            <li><a href="#hero">Accueil</a></li>
+            <li><a href="#services">Bon à savoir</a></li>
+            <li><a href="#pricing">Pack</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#connexion">connexion</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Cloud Steroids</h4>
+          <ul>
+            <li><a href="#">Vente de licence</a></li>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Product Management</a></li>
+            <li><a href="#">Marketing</a></li>
+            <li><a href="#">Graphic Design</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contactez-Nous</h4>
+          <p>
+            rue 202<br>
+            Abidjan, Cocody<br>
+            Faya <br><br>
+            <strong>Phone:</strong> +225 0758462391<br>
+            <strong>Email:</strong> infocstexto@cloudsteroids.com<br>
+          </p>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container mt-4">
+      <div class="copyright">
+        &copy; Copyright <strong><span>CS'Texto</span></strong>. All Rights Reserved
+      </div>
+
+    </div>
+
+  </footer><!-- End Footer -->
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 </body>
+
 </html>
