@@ -62,13 +62,11 @@
         <div class="row gy-5" data-aos="fade-in">
             <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start">
             <h2>Bienvenue à <span>CS'Texto</span></h2>
-            <p>Vous êtes au bon endroit pour envoyer des SMS à des centaines, des milliers, 
-                voire des millions de personnes. Notre application innovante et facile à utiliser 
-                vous permet de créer et d'envoyer des campagnes SMS à grande échelle avec 
-                une précision et une rapidité inégalées.</p>
+            <p>Vous êtes au bon endroit pour envoyer des SMS à des centaines de personnes partout en Côte D'Ivoire. Notre application innovante et facile à utiliser 
+                vous permet de créer et d'envoyer des SMS de masse avec une rapidité inégalées.</p>
             <div class="d-flex justify-content-center justify-content-lg-start">
                 <a href="contenu/signup.php" class="btn-get-started">S'inscrire</a>
-                <a href="https://www.youtube.com/watch?v=LUI6QR7kOBA" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Régarder la Video</span></a>
+                <a href="" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Régarder la Video</span></a>
             </div>
             </div>
             <div class="col-lg-6 order-1 order-lg-2">
@@ -84,28 +82,28 @@
             <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
                 <div class="icon-box">
                 <div class="icon"><i class="bi bi-balloon-heart"></i></div>
-                <h4 class="title"><a href="" class="stretched-link">Simple</a></h4>
+                <h4 class="title"><a href="#" class="stretched-link">Simple</a></h4>
                 </div>
             </div><!--End Icon Box -->
 
             <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
                 <div class="icon-box">
                 <div class="icon"><i class="bi bi-gem"></i></div>
-                <h4 class="title"><a href="" class="stretched-link">Rapide</a></h4>
+                <h4 class="title"><a href="#" class="stretched-link">Rapide</a></h4>
                 </div>
             </div><!--End Icon Box -->
 
             <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
                 <div class="icon-box">
                 <div class="icon"><i class="bi bi-award"></i></div>
-                <h4 class="title"><a href="" class="stretched-link">Professionnel</a></h4>
+                <h4 class="title"><a href="#" class="stretched-link">Professionnel</a></h4>
                 </div>
             </div><!--End Icon Box -->
 
             <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="500">
                 <div class="icon-box">
                 <div class="icon"><i class="bi bi-cash-coin"></i></div>
-                <h4 class="title"><a href="" class="stretched-link">Moins couteux</a></h4>
+                <h4 class="title"><a href="#" class="stretched-link">Moins couteux</a></h4>
                 </div>
             </div><!--End Icon Box -->
 
@@ -453,7 +451,7 @@
           <a href="index.html" class="logo d-flex align-items-center">
             <span>CS'Texto</span>
           </a>
-          <p>votre service de messagerie </p>
+          <p>Suivez-nous partout</p>
           <div class="social-links d-flex mt-4">
             <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
             <a href="https://www.facebook.com/CloudSteroids2020" class="facebook"><i class="bi bi-facebook"></i></a>
@@ -463,13 +461,13 @@
         </div>
 
         <div class="col-lg-2 col-6 footer-links">
-          <h4>Menu </h4>
+          <h4>Menu</h4>
           <ul>
             <li><a href="#hero">Accueil</a></li>
             <li><a href="#services">Bon à savoir</a></li>
             <li><a href="#pricing">Pack</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="#connexion">connexion</a></li>
+            <li><a href="contenu/login.php">S'inscrire</a></li>
           </ul>
         </div>
 

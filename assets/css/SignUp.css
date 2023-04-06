@@ -2,7 +2,7 @@
 .SignUp{
     
     display: flex;
-    background: #06466d;  
+    background: #ece8e8;  
     width: 65%; 
     height: 85%;
     border-radius: 20px;
@@ -20,7 +20,8 @@
     position: relative;
     margin: auto;
     width: 50%;
-    background-color: #3092d3;
+    color: #fff;
+    background-color: #2B73B3;
     border-radius: 20px;
     margin-left: 5px;
     float: none;
@@ -32,7 +33,7 @@
     margin:auto;
     margin-bottom: 10px;
     margin-left:37%;
-    color: #43cfde;
+    color: #fff;
     font-size: 30px
 }
 
@@ -65,6 +66,10 @@ input[type="checkbox"]{
     background-color:rgb(173, 92, 26);
     margin-left: 35%;
     margin-bottom: 5px;
+}
+
+.mb-3 a{
+    color: #fff
 }
  /* CSS DE L'IMAGE DE LA PAGE INSCRIPTION */
 .image{
@@ -128,7 +133,7 @@ input[type="checkbox"]{
 }
 
 .parametre span a{
-    color: #ba6215;
+    color: #fff;
     text-decoration: none; 
 }
 
@@ -145,7 +150,7 @@ input[type="checkbox"]{
 }
 
 .parametre2 span a{
-    color: #ba6215;
+    color: #fff;
     text-decoration: none;
 }
 
