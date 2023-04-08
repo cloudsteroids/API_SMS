@@ -25,27 +25,34 @@
                     <a href="dashboard.php" class="active">Dashboard</a>   
                 </div>
                 
-                <div>
-                <!-- <i class="fa-solid fa-chart-line"></i> -->
-                    <a class="Messagerie" href="#">Messagerie</a>
-                </div>
-                <ul class="menu">
-                    <li><a href="#">Nouveau SMS</a></li>
-                    <li><a href="#">Historique SMS</a></li>
-                </ul>
-
+                <span class="container">
+                    <div>
+                    <!-- <i class="fa-solid fa-chart-line"></i> 
+                <i class="fa fa-caret-down"></i>-->
+                        <a class="messagerie" href="#">Messagerie </a>
+                    </div>
+                    <ul class="menu">
+                        <li><a href="#">Nouveau SMS</a></li>
+                        <li><a href="#">Historique SMS</a></li>
+                    </ul>
+                </span>
+                
+                <span class="container">
                 <div>
                 <!-- <i class="fa-solid fa-chart-line"></i>-->
-                    <a class="" href="#">Répertoire</a> 
+                    <a class="repertoire" href="#">Répertoire</a> 
                 </div>
                 <ul class="menu">
                     <li><a href="#">Contact</a></li>
                     <li><a href="#">Liste Diffusion</a></li>
                 </ul>
+                </span>
 
+
+                <span class="container">
                 <div>
                     <!-- <i class="fa-solid fa-chart-line"></i> -->
-                    <a class="" href="#">Paramètres</a> 
+                    <a class="parametres" href="#">Paramètres</a> 
                 </div>
                 <ul class="menu">
                     <li><a href="#">Profil</a></li>
@@ -53,6 +60,7 @@
                     <li><a href="#">Historique Achats</a></li>
                     <li><a href="#">Contactez Support</a></li> 
                 </ul>
+                </span>
             </div>
     </div>
 
@@ -76,7 +84,7 @@
         </nav>
         <div class="contain">
                 
-
+                
 
 
         </div>
