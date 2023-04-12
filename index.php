@@ -466,7 +466,7 @@
           <h4>Menu</h4>
           <ul>
             <li><a href="#hero">Accueil</a></li>
-            <li><a href="#services">Bon à savoir</a></li>
+            <li><a href="#services">Solution</a></li>
             <li><a href="#pricing">Pack</a></li>
             <li><a href="#contact">Contact</a></li>
             <li><a href="contenu/login.php">S'inscrire</a></li>
