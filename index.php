@@ -61,7 +61,7 @@
         <div class="container position-relative">
         <div class="row gy-5" data-aos="fade-in">
             <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start">
-            <h2>Bienvenue<span>,</span></h2>
+            <h2>Bienvenue<span></span></h2>
             <p>
                <span>CS'Texto</span> est une application innovante qui vous permet de créer et d'envoyer des SMS de masse avec une rapidité inégalées.
                 Vous voulez envoyer des SMS à des centaines de personnes partout en Côte D'Ivoire, en un clic, vous êtes au bon endroit.
