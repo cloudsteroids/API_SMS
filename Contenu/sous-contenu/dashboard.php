@@ -32,8 +32,8 @@
                         <a class="messagerie" href="#">Messagerie </a>
                     </div>
                     <ul class="menu">
-                        <li><a href="#">Nouveau SMS</a></li>
-                        <li><a href="#">Historique SMS</a></li>
+                        <li><a href="messagerie/new_sms.php">Nouveau SMS</a></li>
+                        <li><a href="messagerie/story_sms.php">Historique SMS</a></li>
                     </ul>
                 </span>
                 
@@ -43,8 +43,8 @@
                     <a class="repertoire" href="#">Répertoire</a> 
                 </div>
                 <ul class="menu">
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Liste Diffusion</a></li>
+                    <li><a href="repertoire/contacts.php">Contact</a></li>
+                    <li><a href="repertoire/liste_diffusion.php">Liste Diffusion</a></li>
                 </ul>
                 </span>
 
@@ -55,10 +55,10 @@
                     <a class="parametres" href="#">Paramètres</a> 
                 </div>
                 <ul class="menu">
-                    <li><a href="#">Profil</a></li>
-                    <li><a href="#">Achater Packs</a></li>
-                    <li><a href="#">Historique Achats</a></li>
-                    <li><a href="#">Contactez Support</a></li> 
+                    <li><a href="parametres/profil.php">Profil</a></li>
+                    <li><a href="parametres/achat_pack.php">Achater Packs</a></li>
+                    <li><a href="parametres/story_pack.php">Historique Achats</a></li>
+                    <li><a href="parametres/support.php">Contactez Support</a></li> 
                 </ul>
                 </span>
             </div>
@@ -78,7 +78,7 @@
                     <p>SMS restants : </p>
                 </div>
                 
-                <a href="">Acheter Pack</a>  
+                <a href="parametres/achat_pack.php">Acheter Pack</a>  
             </div>
             
         </nav>
