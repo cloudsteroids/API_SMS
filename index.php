@@ -42,7 +42,7 @@
         <nav id="navbar" class="navbar">
             <ul>
             <li><a href="#hero">Accueil</a></li>
-            <li><a href="#services">Bon à savoir</a></li>
+            <li><a href="#services">Solution</a></li>
             <li><a href="#pricing">Pack</a></li>
             <li><a href="#contact">Contact</a></li>
             <li><a href="contenu/login.php">connexion</a></li>
@@ -61,9 +61,12 @@
         <div class="container position-relative">
         <div class="row gy-5" data-aos="fade-in">
             <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start">
-            <h2>Bienvenue à <span>CS'Texto</span></h2>
-            <p>Vous êtes au bon endroit pour envoyer des SMS à des centaines de personnes partout en Côte D'Ivoire. Notre application innovante et facile à utiliser 
-                vous permet de créer et d'envoyer des SMS de masse avec une rapidité inégalées.</p>
+            <h2>Bienvenue<span>,</span></h2>
+            <p>
+               <span>CS'Texto</span> est une application innovante qui vous permet de créer et d'envoyer des SMS de masse avec une rapidité inégalées.
+                Vous voulez envoyer des SMS à des centaines de personnes partout en Côte D'Ivoire, en un clic, vous êtes au bon endroit.
+
+            </p>
             <div class="d-flex justify-content-center justify-content-lg-start">
                 <a href="contenu/signup.php" class="btn-get-started">S'inscrire</a>
                 <a href="" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Régarder la Video</span></a>
@@ -123,8 +126,9 @@
 
                 <div class="section-header">
                     <h2>À qui s’adresse notre solution SMS ?</h2>
-                    <p>Idéale pour vous rapprocher de vos équipes et de votre clientèle, cette solution convient à quiconque souhaite profiter d’un moyen de communication simple,
-                        flexible, réactif et aux multiples usages. Voici quelques exemples:
+                    <p>
+                        Notre solution SMS est idéale pour ameliorer la rélation avec vos clients ainsi que votre equipe. C'est un moyen de communication
+                        simple, flexible et réactif qui vous permet de dévélopper vos ventes, fideliser vos clients, les informer en temps réels.
                     </p>
                 </div>
 
@@ -136,7 +140,7 @@
                         <i class="bi bi-activity"></i>
                     </div>
                     <h3>Aux banques</h3>
-                    <p>pour l’envoi de codes 
+                    <p>Envoyer aisement les codes 
                         de validation pour les paiements en ligne,
                         d’informations concernant les mouvements
                         bancaires, etc.                    
@@ -150,10 +154,8 @@
                             <i class="bi bi-broadcast"></i>
                         </div>
                         <h3>Aux agences de communication</h3>
-                        <p>Pour l’envoi d’annonces d’événements, 
-                            de résultats d’un jeu-concours, de
-                            communications internes et externes,
-                            etc.
+                        <p>Communiquer partout sur les événements, les produits et services, 
+                            les résultats de jeu-concours, etc.
                         </p>
                         </div>
                 </div><!-- End Service Item -->
@@ -164,8 +166,8 @@
                             <i class="bi bi-shop"></i>
                         </div>
                         <h3>Commerçant·es</h3>
-                        <p>Pour l’envoi d’offres
-                            promotionnelles, de notifications d’ouvertures
+                        <p>
+                            Informer vos clients des offres promotionnelles, de notifications d’ouvertures
                             exceptionnelles, etc.
                         </p>
                     </div>
@@ -177,7 +179,7 @@
                             <i class="bi bi-hospital"></i>
                         </div>
                         <h3>Aux professionnels de santé</h3>
-                        <p>Pour l’envoi de rappels de rendez-vous, 
+                        <p>Envoyer des rappels de rendez-vous, 
                             de résultats, de mots de passe uniques
                             pour accéder aux plateformes sécurisées,
                             etc..
@@ -216,7 +218,7 @@
 
                 <div class="section-header">
                 <h2>Comment s'y prendre?</h2>
-                <p>Simple et rapide, juste importe tes contacts et ta configuration est faite.</p>
+                <p>Simple et rapide, importe juste tes contacts et ta configuration est faite.</p>
                 </div>
 
                 <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
