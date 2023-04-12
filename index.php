@@ -405,7 +405,7 @@
                     <div class="info-item d-flex">
                         <a href="https://www.facebook.com/CloudSteroids2020" class="facebook"><i class="bi bi-facebook"></i></a>
                         <div>
-                        <h4>CS'Texto</h4>
+                        <h4>Cloud Steroids</h4>
                         </div>
                     </div><!-- End Info Item -->
                     </div>
@@ -501,7 +501,7 @@
 
     <div class="container mt-4">
       <div class="copyright">
-        &copy; Copyright <strong><span>CS'Texto</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>CLoud Steroids</span></strong>. All Rights Reserved
       </div>
 
     </div>
