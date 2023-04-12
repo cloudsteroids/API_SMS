@@ -320,7 +320,7 @@
                         <li><i class="bi bi-check"></i> Support 7/24</li>
                         <li><i class="bi bi-check"></i> Forfait Illimité</li>
                     </ul>
-                    <div class="text-center"><a href="#" class="buy-btn">Achéter</a></div>
+                    <div class="text-center"><a href="#" class="buy-btn">Acheter</a></div>
                     </div>
                 </div><!-- End Pricing Item -->
 
@@ -337,7 +337,7 @@
                         <li><i class="bi bi-check"></i> Support 7/24</li>
                         <li><i class="bi bi-check"></i>Forfait Illimité</li>
                     </ul>
-                    <div class="text-center"><a href="#" class="buy-btn">Achéter</a></div>
+                    <div class="text-center"><a href="#" class="buy-btn">Acheter</a></div>
                     </div>
                 </div><!-- End Pricing Item -->
 
@@ -353,7 +353,7 @@
                         <li><i class="bi bi-check"></i> Support 7/24</li>
                         <li><i class="bi bi-check"></i> Forfait Illimité</li>
                     </ul>
-                    <div class="text-center"><a href="#" class="buy-btn">Achéter </a></div>
+                    <div class="text-center"><a href="#" class="buy-btn">Acheter </a></div>
                     </div>
                 </div><!-- End Pricing Item -->
 
