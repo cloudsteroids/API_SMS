@@ -382,7 +382,7 @@
                         <i class="bi bi-geo-alt flex-shrink-0"></i>
                         <div>
                         <h4>Location:</h4>
-                        <p>A108 rue 05, Abidjan, Cocody Faya</p>
+                        <p>93H6+36C, Abidjan</p>
                         </div>
                     </div><!-- End Info Item -->
 
@@ -390,7 +390,7 @@
                         <i class="bi bi-envelope flex-shrink-0"></i>
                         <div>
                         <h4>Email:</h4>
-                        <p>c-mahideo@cloudsteroids.com</p>
+                        <p>sales@cloudsteroids.com</p>
                         </div>
                     </div><!-- End Info Item -->
 
@@ -398,7 +398,7 @@
                         <i class="bi bi-phone flex-shrink-0"></i>
                         <div>
                         <h4>Contact:</h4>
-                        <p>+225 587615933</p>
+                        <p>+225 2722246838</p>
                         </div>
                     </div><!-- End Info Item -->
 
@@ -457,8 +457,7 @@
           <div class="social-links d-flex mt-4">
             <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
             <a href="https://www.facebook.com/CloudSteroids2020" class="facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.linkedin.com/company/cloudsteroids/" class="linkedin"><i class="bi bi-linkedin"></i></a>
           </div>
         </div>
 
@@ -490,8 +489,8 @@
             rue 202<br>
             Abidjan, Cocody<br>
             Faya <br><br>
-            <strong>Phone:</strong> +225 0758462391<br>
-            <strong>Email:</strong> infocstexto@cloudsteroids.com<br>
+            <strong>Phone:</strong> +225 2722246838<br>
+            <strong>Email:</strong> sales@cloudsteroids.com<br>
           </p>
 
         </div>
