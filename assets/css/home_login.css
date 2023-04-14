@@ -1,6 +1,5 @@
 *{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
 }
 
 .nav_vertical{
@@ -17,7 +16,7 @@
     position: fixed;
     width: 80%;
     height: 100%;
-    background-color: #b3def2;
+    background-color: #fff;
     right: 0;
     border-radius: 20px;
 }
@@ -29,6 +28,12 @@
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: gray 2px 3px;
+}
+
+.containn{
+    position: relative;
+    width: 100%;
+    height: 85%;
 }
 
 .logo{
@@ -127,6 +132,7 @@
 }
 
 .container{
+    position: relative;
     display: block;
     margin-bottom: 30px;
     margin-top: 10px;
@@ -217,4 +223,214 @@
     background: #06466d;
     transition-duration: 0.4s;
 }
+
+
+
+
+/*CSS DU CONTENU DE LA PAGE ENVOIE SMS*/
+
+
+.option_send{
+    position: relative;
+    display: block;
+    background-color:#f5f5f5bb;;
+    top: 50px;
+    height: 12%;
+    width: 90%;
+    font-size: 20px;
+    margin: auto;
+    transition-duration: 0.5s;
+    box-shadow: 0 5px 30px 0 rgba(82, 63, 105, 0.2);
+    padding: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.option_send:hover{
+    
+    opacity: 1;
+    transition-duration: 0.5s;
+}
+
+.option_send input{
+    position: relative;
+    height: 20px;
+    width: 20px;
+    justify-content: space-between;
+
+}
+
+.option_send input[type="text"]{
+    display: none;
+    height: 70px;
+    width: 40%;
+    color:#fff;
+    border: 2px solid #a5c5fe;
+    background: #fff;
+    color: #000000;
+    border-radius: 15px;
+    font-size: 21px;
+    text-align: center;
+    left:10%
+}
+
+.option_send select{
+    display: none;
+    position:relative;
+    height: 70px;
+    width: 40%;
+    border: 2px solid #a5c5fe;
+    background: #ffffff;
+    color: #000000;
+    border-radius: 15px;
+    font-size: 21px;
+    text-align: center;
+    left:10%;    
+}
+
+.option_send select option{
+    width: 40%;
+    border: 2px solid #a5c5fe;
+    background: #ffffff;
+    color: #000000;
+}
+
+
+
+.option_send input[type="text"]:focus{
+    outline: none;
+}
+
+.option_send select:focus{
+    outline: none;
+}
+
+.containn .form_sms{
+    top: 90px;
+    position: relative;
+    height: 50%;
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.containn .form_sms form{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.containn .form_sms textarea{
+    display: block;
+    margin: auto;
+    outline: none;
+    border: 1px solid  #2d76b2;
+    background: #f5f5f5;
+    transition-duration: 0.5s;
+    border-radius: 10px;
+}
+
+.containn .form_sms textarea:hover{
+    border: 2px solid  #2d76b2;
+    transition-duration: 0.5s;
+}
+
+.containn .form_sms .button{
+    position: relative;
+    height: 15%;
+    width: 40%;
+    display: block;
+    top:30px;
+    margin: auto;
+}
+
+.containn .form_sms .button button{
+   border: none;
+   padding: 15px;
+   margin: 10px;
+   border-radius: 10px;
+   background: #f5f5f5;
+   border: 1px solid #2d76b2 ;
+   font-size: 17px;
+   cursor: pointer;
+   transition-duration: 0.5s;
+}
+
+.containn .form_sms .button button:hover{
+    transition-duration: 0.5s;
+    background-color: #06466d;
+    color:#fff;
+}
+
+
+
+
+/*  CSS POPUP */
+.containn .popup{
+    position: absolute;
+    display: none;
+    left:25%;
+    width: 50%;
+    height: 50%;
+    z-index: 1;
+    background: #f5f5f5;
+    box-shadow: 0 5px 30px 0 rgba(82, 63, 105, 0.2);
+    top: 15%;
+    text-align: center;
+    transition-duration: 0.6s;
+}
+.containn .popup:hover{
+    transform: scale(1.5);
+    transition-duration: 0.6s;
+}
+
+.containn .popup img{
+    position: relative;
+    height: 30%;
+    width: 15%;
+    border-radius: 65px;
+    border: 2px solid #a5c5fe;
+}
+
+.containn .popup form{
+    position: relative;
+    height: 50%;
+}
+
+.containn .popup form label{
+    color: #06466d;
+}
+.containn .popup form input {
+    height: 50px;
+    width: 230px;
+    border:none;
+}
+
+.containn .popup form .button{
+    margin-top: 20px;
+    position: relative;
+    width: 40%;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.containn .popup form .button button{
+    position: relative;
+    width: 30%;
+    padding: 7px;
+    border:none;
+    border-bottom:2px solid #06466d;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.containn .popup form .button button:hover{
+    transition-duration: 0.5s;
+    background-color: #06466d;
+    color:#fff;
+    border-top-left-radius: 10px ;
+    border-top-right-radius: 10px ;
+}
+
 

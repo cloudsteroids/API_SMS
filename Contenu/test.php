@@ -1,13 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-    <title>Document</title>
-</head>
-<body>
-<i class="fa-solid fa-chart-line"></i>
-</body>
-</html>
+<select id="deroulant" class="form-select" aria-label="Default select example">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="3">Three</option>
+            </select>
+
+
+
+            
+  
+
+document.getElementById('champ').style.display="inline-block";
+
+function hideShowDiv(val)
+{
+    
+    if(val==1)
+    {
+        document.getElementById('champ').style.display="inline-block";
+        document.getElementById('deroulant').style.display="none";
+    }
+    if(val==2)
+    {
+        document.getElementById('champ').style.display="none";
+        document.getElementById('deroulant').style.display="inline-block";
+    }
+}

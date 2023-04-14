@@ -2,7 +2,7 @@
     <!-- Header -->
 
     <?php include('../../nav/head.php');   ?>
-
+    <title>Historique SMS</title>
     <!-- NAV VERTICALE -->
     <?php
         include('../../nav/nav_vertical.php');
