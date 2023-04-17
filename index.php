@@ -36,7 +36,7 @@
         <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
         <a href="index.php" class="logo d-flex align-items-center">
             <!-- Uncomment the line below if you also wish to use an image logo -->
-            <img src="assets/image/logo_last.png" alt=""> 
+            <img src="assets/image/logo3.png" alt=""> 
             <!-- <h1>CS'Texto<span>.</span></h1>-->
         </a>
         <nav id="navbar" class="navbar">
