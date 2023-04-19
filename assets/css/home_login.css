@@ -1,3 +1,5 @@
+
+
 *{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -27,7 +29,7 @@
     height: 15%;
     background-color: #ffffff;
     border-radius: 10px;
-    box-shadow: gray 2px 3px;
+    box-shadow: 0 5px 30px 0 rgba(11, 130, 203, 0.2);
 }
 
 .containn{
@@ -237,7 +239,7 @@
     top: 50px;
     height: 12%;
     width: 90%;
-    font-size: 20px;
+    font-size: 17px;
     margin: auto;
     transition-duration: 0.5s;
     box-shadow: 0 5px 30px 0 rgba(82, 63, 105, 0.2);
@@ -260,6 +262,7 @@
 }
 
 .option_send input[type="text"]{
+    position: relative;
     display: none;
     height: 70px;
     width: 40%;
@@ -268,9 +271,9 @@
     background: #fff;
     color: #000000;
     border-radius: 15px;
-    font-size: 21px;
+    font-size: 17px;
     text-align: center;
-    left:10%
+    left:10%;
 }
 
 .option_send select{
@@ -282,7 +285,7 @@
     background: #ffffff;
     color: #000000;
     border-radius: 15px;
-    font-size: 21px;
+    font-size: 17px;
     text-align: center;
     left:10%;    
 }
@@ -320,8 +323,13 @@
 }
 
 .containn .form_sms textarea{
+    position: relative;
     display: block;
     margin: auto;
+    width: 90%;
+    height: 60%;
+    font-size: 18px;
+    line-height: 1.5;
     outline: none;
     border: 1px solid  #2d76b2;
     background: #f5f5f5;
@@ -367,7 +375,7 @@
 /*  CSS POPUP */
 .containn .popup{
     position: absolute;
-    display: none;
+    visibility: hidden;
     left:25%;
     width: 50%;
     height: 50%;
@@ -377,6 +385,7 @@
     top: 15%;
     text-align: center;
     transition-duration: 0.6s;
+    transform: scale(0.1);
 }
 .containn .popup:hover{
     transform: scale(1.5);
@@ -431,6 +440,499 @@
     color:#fff;
     border-top-left-radius: 10px ;
     border-top-right-radius: 10px ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVITE DE DES DEUX NAVS */
+
+@media screen and (max-width: 1648px) {
+
+    .nav_vertical{
+        display: none;
+    }
+
+    .navbar .session, .info{
+        display: none;
+
+    }
+
+    .nav_horizontal{
+        width: 100%;
+        overflow-y: scroll;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .nav_horizontal{
+        overflow-y: scroll;
+    }
+    .option_send{
+        height: 10%;
+        width: 90%;
+        font-size: 11px;
+        margin: auto;
+    }
+
+    .option_send input{
+        position: relative;
+        height: 10px;
+        width: 10px;
+        justify-content: space-between;
+    
+    }
+    
+    .option_send input[type="text"]{
+        position: relative;
+        display: none;
+        height: 25px;
+        width: 30%;
+        font-size: 7px;
+        left:5%;
+    }
+    
+    .option_send select{
+        display: none;
+        position:relative;
+        height: 30px;
+        width: 30%;
+        font-size: 7px;
+        left:5%;    
+    }
+    
+    .option_send select option{
+        position: relative;
+        width: 10%;
+        border: 2px solid #a5c5fe;
+        background: #ffffff;
+        color: #000000;
+        overflow-y: scroll;
+    }
+    
+    .option_send input[type="text"]:focus{
+        outline: none;
+    }
+    
+    .option_send select:focus{
+        outline: none;
+    }
+
+    .containn .form_sms textarea{
+        font-size: 11px;
+    }
+
+
+    /*Button*/
+    .containn .form_sms .button{
+        position: relative;
+        height: 15%;
+        width: 90%;
+        display: flex;
+        top:30px;
+        justify-content: space-around;
+        margin: auto;
+    }
+    
+    .containn .form_sms .button button{
+       padding: 11px;
+       margin: 3px;
+       border: 1px solid #2d76b2 ;
+       font-size: 11px;
+    }
+
+
+    /*  CSS POPUP */
+    .containn .popup{
+        padding-top: 20px;
+        left:25%;
+        width: 50%;
+        height: 40%;
+        z-index: 1;
+        box-shadow: 0 5px 30px 0 rgba(82, 63, 105, 0.2);
+        top: 15%;
+    }
+    .containn .popup:hover{
+        transform: scale(1.5);
+        transition-duration: 0.6s;
+    }
+
+    .containn .popup img{
+        position: relative;
+        height: 10%;
+        width: 15%;
+        border-radius: 65px;
+        border: 2px solid #a5c5fe;
+    }
+
+    .containn .popup form{
+        position: relative;
+        height: 50%;
+    }
+
+    .containn .popup form label{
+        color: #06466d;
+        font-size: 8px;
+    }
+    .containn .popup form input {
+        height: 40px;
+        width: 120px;
+        border:none;
+        font-size: 8px;
+    }
+
+    .containn .popup form .button{
+        margin-top: 20px;
+        position: relative;
+        width: 70%;
+        margin: auto;
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    .containn .popup form .button button{
+        position: relative;
+        width: 30%;
+        padding: 7px;
+        border:none;
+        border-bottom:2px solid #06466d;
+        transition-duration: 0.5s;
+        cursor: pointer;
+        font-size: 7px;
+    }
+
+    .containn .popup form .button button:hover{
+        transition-duration: 0.5s;
+        background-color: #06466d;
+        color:#fff;
+        border-top-left-radius: 10px ;
+        border-top-right-radius: 10px ;
+    }
+    .popup h2{
+        font-size: 11px;
+    }
+
+
+
+}
+ 
+
+/* IPHONE XR & SAMSUNG GALAXY*/
+
+@media screen and (max-width: 699px) and (min-width: 401px){
+    .nav_horizontal{
+        overflow-y: scroll;
+    }
+    .option_send{
+        height: 10%;
+        width: 90%;
+        font-size: 11px;
+        margin: auto;
+    }
+
+    .option_send input{
+        position: relative;
+        height: 12px;
+        margin: auto;
+        width: 12px;
+        justify-content: space-between;
+    
+    }
+    
+    .option_send input[type="text"]{
+        position: relative;
+        display: none;
+        height: 35px;
+        width: 35%;
+        font-size: 7px;
+        left:5%;
+    }
+    
+    .option_send select{
+        display: none;
+        position:relative;
+        height: 35px;
+        width: 35%;
+        font-size: 7px;
+        left:5%;    
+    }
+    
+    .option_send select option{
+        position: relative;
+        width: 10%;
+        border: 2px solid #a5c5fe;
+        background: #ffffff;
+        color: #000000;
+        overflow-y: scroll;
+    }
+    
+    .option_send input[type="text"]:focus{
+        outline: none;
+    }
+    
+    .option_send select:focus{
+        outline: none;
+    }
+
+    .containn .form_sms textarea{
+        font-size: 11px;
+    }
+
+
+    /*Button*/
+    .containn .form_sms .button{
+        position: relative;
+        height: 15%;
+        width: 90%;
+        display: flex;
+        top:30px;
+        justify-content: space-around;
+        margin: auto;
+    }
+    
+    .containn .form_sms .button button{
+       margin-bottom: 0;
+       border: 1px solid #2d76b2 ;
+       font-size: 11px;
+    }
+
+    /*  CSS POPUP */
+    .containn .popup{
+        padding-top: 20px;
+        left:25%;
+        width: 50%;
+        height: 40%;
+        z-index: 1;
+        box-shadow: 0 5px 30px 0 rgba(82, 63, 105, 0.2);
+        top: 15%;
+    }
+    .containn .popup:hover{
+        transform: scale(1.5);
+        transition-duration: 0.6s;
+    }
+
+    .containn .popup img{
+        position: relative;
+        height: 13%;
+        width: 15%;
+        border-radius: 65px;
+        border: 2px solid #a5c5fe;
+    }
+
+    .containn .popup form{
+        position: relative;
+        height: 50%;
+    }
+
+    .containn .popup form label{
+        color: #06466d;
+        font-size: 8px;
+    }
+    .containn .popup form input {
+        height: 40px;
+        width: 120px;
+        border:none;
+        font-size: 8px;
+    }
+
+    .containn .popup form .button{
+        margin-top: 20px;
+        position: relative;
+        width: 70%;
+        margin: auto;
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    .containn .popup form .button button{
+        position: relative;
+        width: 30%;
+        padding: 7px;
+        border:none;
+        border-bottom:2px solid #06466d;
+        transition-duration: 0.5s;
+        cursor: pointer;
+        font-size: 7px;
+    }
+
+    .containn .popup form .button button:hover{
+        transition-duration: 0.5s;
+        background-color: #06466d;
+        color:#fff;
+        border-top-left-radius: 10px ;
+        border-top-right-radius: 10px ;
+    }
+    .popup h2{
+        font-size: 11px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 912px) and (min-width: 700px){
+    .nav_horizontal{
+        overflow-y: scroll;
+    }
+    .option_send{
+        height: 10%;
+        width: 90%;
+        font-size: 16px;
+        margin: auto;
+    }
+
+    .option_send input{
+        position: relative;
+        height: 15px;
+        margin: auto;
+        width: 15px;
+        justify-content: space-between;
+    
+    }
+    
+    .option_send input[type="text"]{
+        position: relative;
+        display: none;
+        height: 35px;
+        width: 40%;
+        font-size: 13px;
+        left:5%
+    }
+    
+    .option_send select{
+        display: none;
+        position:relative;
+        height: 35px;
+        width: 40%;
+        font-size: 13px;
+        left:5%;    
+    }
+    
+    .option_send select option{
+        position: relative;
+        width: 10%;
+        border: 2px solid #a5c5fe;
+        background: #ffffff;
+        color: #000000;
+        overflow-y: scroll;
+    }
+    
+    .option_send input[type="text"]:focus{
+        outline: none;
+    }
+    
+    .option_send select:focus{
+        outline: none;
+    }
+
+    .containn .form_sms textarea{
+        font-size: 13px;
+    }
+
+
+    /*Button*/
+    .containn .form_sms .button{
+        position: relative;
+        height: 15%;
+        width: 90%;
+        display: flex;
+        top:30px;
+        justify-content: space-around;
+        margin: auto;
+    }
+    
+    .containn .form_sms .button button{
+
+       padding-top: 5px;
+       padding: 10px;
+       border: 1px solid #2d76b2 ;
+       font-size: 11px;
+    }
+
+    /*  CSS POPUP */
+    .containn .popup{
+        padding-top: 20px;
+        left:25%;
+        width: 50%;
+        height: 40%;
+        top: 15%;
+    }
+    .containn .popup:hover{
+        transform: scale(1.5);
+        transition-duration: 0.6s;
+    }
+
+    .containn .popup img{
+        position: relative;
+        height: 15%;
+        width: 15%;
+        border-radius: 65px;
+        border: 2px solid #a5c5fe;
+    }
+
+    .containn .popup form{
+        position: relative;
+        height: 50%;
+    }
+
+    .containn .popup form label{
+        color: #06466d;
+        font-size: 8px;
+    }
+    .containn .popup form input {
+        height: 40px;
+        width: 120px;
+        border:none;
+        font-size: 8px;
+    }
+
+    .containn .popup form .button{
+        margin-top: 20px;
+        position: relative;
+        width: 70%;
+        margin: auto;
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    .containn .popup form .button button{
+        position: relative;
+        width: 30%;
+        padding: 7px;
+        border:none;
+        border-bottom:2px solid #06466d;
+        transition-duration: 0.5s;
+        cursor: pointer;
+        font-size: 7px;
+    }
+
+    .containn .popup form .button button:hover{
+        transition-duration: 0.5s;
+        background-color: #06466d;
+        color:#fff;
+        border-top-left-radius: 10px ;
+        border-top-right-radius: 10px ;
+    }
+    .popup h2{
+        font-size: 11px;
+    }
+
 }
 
 

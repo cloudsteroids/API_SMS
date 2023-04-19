@@ -38,32 +38,32 @@
 
                 <form action="" method="post">
 
-                    <textarea name="" id="" cols="100" rows="20" size=""></textarea>
+                    <textarea name="" id=""  placeholder="Saisissez le message"></textarea>
 
 
                     <div class="button">
                         <button name="" type="submit">Envoyer</button>
-                        <button onclick="popupEcho(1)" type="button">Programmer</button>
+                        <button onclick="popupEcho()" type="button">Programmer</button>
                     </div>
 
                 </form>
 
             </div>
             
-                <!-- POPUP -->
-                    <div id="popup" class="popup">
-                        <h2>Planifier Envoi</h2>
+            <!-- POPUP -->
+            <div id="popup" class="popup">
+                <h2>Planifier Envoi</h2>
 
-                        <img src="../../../assets/image/avion.jpg" alt="">
-                        <form action="" method="post">
-                            <label for="date_send">Entrez la date d'envoi</label>
-                            <input type="datetime-local" id="date_send" name="date_send">
-                            <div class="button">
-                                <button onclick="popupEcho(0)"  type="button">Annuler</button>
-                                <button  type="submit" name="">Valider</button>
-                            </div>
-                        </form>
+                <img src="../../../assets/image/avion.jpg" alt="">
+                <form action="" method="post">
+                    <label for="date_send">Entrez la date d'envoi</label>
+                    <input type="datetime-local" id="date_send" name="date_send">
+                    <div class="button">
+                        <button onclick="popupRemove()"  type="button">Annuler</button>
+                        <button  type="submit" name="">Valider</button>
                     </div>
+                </form>
+            </div>
                
         </div>
     </div>    

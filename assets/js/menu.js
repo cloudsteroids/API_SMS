@@ -23,15 +23,19 @@ function hideShowDiv(val)
 
 
 
-function popupEcho(val)
+function popupEcho()
 {
     
-    if(val==1)
-    {
-        document.getElementById('popup').style.display="block";
-    }
-    if(val==0)
-    {
-        document.getElementById('popup').style.display="none";
-    }
+
+        document.getElementById('popup').style.visibility="visible";
+        document.getElementById('popup').style.transform="scale(1.5)";
+        document.getElementById('popup').style.transitionDuration="0.6s";
+}
+
+function popupRemove()
+{
+        document.getElementById('popup').style.visibility="hidden";
+        document.getElementById('popup').style.transform="scale(0.01)";
+        document.getElementById('popup').style.transitionDuration="0.2s";
+        document.getElementById('popup').style.top="15%";
 }
