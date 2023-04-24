@@ -177,8 +177,6 @@
         width: 100%;
         height: 95%;
         border-radius:60px ;  
-        margin-bottom: 0;   
-        padding-bottom: 0;
 
 }
 
@@ -462,8 +460,8 @@
         display: none;
     }
 
-    .navbar .session, .info{
-        display: none;
+    .navbar{
+        height: 10%;
 
     }
 
@@ -625,7 +623,85 @@
     }
 
 
+    /*RESPONSIVE NAVBAR HORIZONTALE*/
 
+
+    .session{
+        display: flex;
+        width: 20%;
+        height: 100%;
+        float: auto;
+    }
+    .session a{    
+        display: flex;
+    }
+
+    .session a img{
+        display: block;
+        margin:auto;
+    }
+    .session a .img_profile{
+            width: 92%;
+            height: 42%;
+            border-radius:60px ;       
+    }
+
+    .session a .img_deconnexion{
+        width: 85%;
+        height: 35%;
+        border-radius:30px ;
+        transition-duration: 0.2s;  
+    }
+    .session a .img_deconnexion:hover{
+        width: 85%;
+        height: 35%;
+    }
+    .espace{
+        position: relative;
+        width: 20%;
+        height: 100%;
+    }
+
+    .info{
+        width: 80%;
+        height: 100%;
+        float: left;
+        display: flex;
+        justify-content: space-evenly;
+        line-height: 90px;
+    }
+
+
+    .info a{
+        display: inline-block;
+        position: relative;
+        background: #fff;
+        height: 12%;
+        width: 15%;
+        color:#000000;
+        text-align: center;
+        padding-bottom: 0;
+        padding-top: 0;
+        padding: 11px;
+        top:20px;
+        margin-top:0;
+        border-radius:10px;
+        font-size: 6px;
+        line-height: 18px;
+        border-bottom: 2px solid #2b73b3;
+    }
+
+    .info .text{
+        font-size: 7px;
+        line-height: 60px;
+    }
+
+    .info a:hover{
+        height: 12%;
+        background: #06466d;
+        color:#fff;
+        transition-duration: 0.4s;
+    }
 }
  
 
@@ -781,6 +857,87 @@
     }
 
 
+    /*RESPONSIVE NAVBAR HORIZONTALE*/
+
+
+    .session{
+        display: flex;
+        width: 20%;
+        height: 100%;
+        float: auto;
+    }
+    .session a{    
+        display: flex;
+    }
+
+    .session a img{
+        display: block;
+        margin:auto;
+    }
+    .session a .img_profile{
+            width: 92%;
+            height: 42%;
+            border-radius:60px ;       
+    }
+
+    .session a .img_deconnexion{
+        width: 85%;
+        height: 35%;
+        border-radius:30px ;
+        transition-duration: 0.2s;  
+    }
+    .session a .img_deconnexion:hover{
+        width: 85%;
+        height: 35%;
+    }
+    .espace{
+        position: relative;
+        width: 20%;
+        height: 100%;
+    }
+
+    .info{
+        width: 80%;
+        height: 100%;
+        float: left;
+        display: flex;
+        justify-content: space-evenly;
+        line-height: 90px;
+    }
+
+
+    .info a{
+        display: inline-block;
+        position: relative;
+        background: #fff;
+        height: 12%;
+        width: 15%;
+        color:#000000;
+        text-align: center;
+        padding-bottom: 0;
+        padding-top: 0;
+        padding: 11px;
+        top:20px;
+        margin-top:0;
+        border-radius:10px;
+        font-size: 7px;
+        line-height: 18px;
+        border-bottom: 2px solid #2b73b3;
+    }
+
+    .info .text{
+        font-size: 7px;
+        line-height: 60px;
+    }
+
+    .info a:hover{
+        height: 12%;
+        background: #06466d;
+        color:#fff;
+        transition-duration: 0.4s;
+    }
+
+
 }
 
 
@@ -933,6 +1090,243 @@
         font-size: 11px;
     }
 
+
+    /*RESPONSIVE NAVBAR HORIZONTALE*/
+
+
+    .session{
+        display: flex;
+        width: 25%;
+        height: 100%;
+        float: auto;
+    }
+    .session a{    
+        display: flex;
+    }
+
+    .session a img{
+        display: block;
+        margin:auto;
+    }
+    .session a .img_profile{
+            width: 99%;
+            height: 49%;
+            border-radius:60px ;       
+    }
+
+    .session a .img_deconnexion{
+        width: 95%;
+        height: 40%;
+        border-radius:30px ;
+        transition-duration: 0.2s;  
+    }
+    .session a .img_deconnexion:hover{
+        width: 95%;
+        height: 40%;
+    }
+    .espace{
+        position: relative;
+        width: 20%;
+        height: 100%;
+    }
+
+    .info{
+        width: 75%;
+        height: 100%;
+        float: left;
+        display: flex;
+        justify-content: space-evenly;
+        line-height: 90px;
+    }
+
+
+    .info a{
+        display: inline-block;
+        position: relative;
+        background: #fff;
+        height: 12%;
+        width: 15%;
+        color:#000000;
+        text-align: center;
+        padding-bottom: 0;
+        padding-top: 0;
+        padding: 11px;
+        top:40px;
+        margin-top:0;
+        border-radius:10px;
+        font-size: 10px;
+        line-height: 30px;
+        border-bottom: 2px solid #2b73b3;
+    }
+
+    .info .text{
+
+        font-size: 10px;
+        line-height: 110px;
+    }
+
+    .info a:hover{
+        height: 12%;
+        background: #06466d;
+        color:#fff;
+        transition-duration: 0.4s;
+    }
+
+
+    
+
+}
+
+@media screen and (max-width:1280px) and (min-width: 913px){
+    .containn .popup{
+        padding-top: 20px;
+        left:25%;
+        width: 50%;
+        height: 45%;
+        top: 15%;
+    }
+    .containn .popup:hover{
+        transform: scale(1.5);
+        transition-duration: 0.6s;
+    }
+
+    .containn .popup img{
+        position: relative;
+        height: 30%;
+        width: 15%;
+        border-radius: 65px;
+        border: 2px solid #a5c5fe;
+    }
+
+    .containn .popup form{
+        position: relative;
+        height: 50%;
+    }
+
+    .containn .popup form label{
+        color: #06466d;
+        font-size: 8px;
+    }
+    .containn .popup form input {
+        height: 40px;
+        width: 120px;
+        border:none;
+        font-size: 8px;
+    }
+
+    .containn .popup form .button{
+        margin-top: 20px;
+        position: relative;
+        width: 70%;
+        margin: auto;
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    .containn .popup form .button button{
+        position: relative;
+        width: 30%;
+        padding: 7px;
+        border:none;
+        border-bottom:2px solid #06466d;
+        transition-duration: 0.5s;
+        cursor: pointer;
+        font-size: 7px;
+    }
+
+    .containn .popup form .button button:hover{
+        transition-duration: 0.5s;
+        background-color: #06466d;
+        color:#fff;
+        border-top-left-radius: 10px ;
+        border-top-right-radius: 10px ;
+    }
+    .popup h2{
+        font-size: 11px;
+    }
+
+    /*RESPONSIVE NAVBAR HORIZONTALE*/
+
+
+    .session{
+        display: flex;
+        width: 25%;
+        height: 100%;
+        float: auto;
+    }
+    .session a{    
+        display: flex;
+    }
+
+    .session a img{
+        display: block;
+        margin:auto;
+    }
+    .session a .img_profile{
+            width: 100%;
+            height: 60%;
+            border-radius:60px ;       
+    }
+
+    .session a .img_deconnexion{
+        width: 100%;
+        height: 50%;
+        border-radius:30px ;
+        transition-duration: 0.2s;  
+    }
+    .session a .img_deconnexion:hover{
+        width: 100%;
+        height: 50%;
+    }
+    .espace{
+        position: relative;
+        width: 20%;
+        height: 100%;
+    }
+
+    .info{
+        width: 75%;
+        height: 100%;
+        float: left;
+        display: flex;
+        justify-content: space-evenly;
+        line-height: 90px;
+    }
+
+
+    .info a{
+        display: inline-block;
+        position: relative;
+        background: #fff;
+        height: 12%;
+        width: 15%;
+        color:#000000;
+        text-align: center;
+        padding-bottom: 0;
+        padding-top: 0;
+        padding: 11px;
+        top:10px;
+        margin-top:0;
+        border-radius:10px;
+        font-size: 10px;
+        line-height: 13px;
+        border-bottom: 2px solid #2b73b3;
+    }
+
+    .info .text{
+
+        font-size: 10px;
+        line-height: 50px;
+    }
+
+    .info a:hover{
+        height: 12%;
+        background: #06466d;
+        color:#fff;
+        transition-duration: 0.4s;
+    }
 }
 
 
