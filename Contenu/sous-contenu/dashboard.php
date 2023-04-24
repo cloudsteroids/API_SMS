@@ -43,7 +43,7 @@
                     <a class="repertoire" href="#">Répertoire</a> 
                 </div>
                 <ul class="menu">
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="contacts.php">Contact</a></li>
                     <li><a href="#">Liste Diffusion</a></li>
                 </ul>
                 </span>
