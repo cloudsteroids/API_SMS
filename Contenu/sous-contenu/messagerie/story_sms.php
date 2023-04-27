@@ -17,11 +17,68 @@
         include('../../nav/nav_horizontal.php');
     ?>
         <div class="contain">
-                
-                
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Historique des SMS</h5>
+                    <table class="table table-sm">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Message</th>
+                                <th scope="col">destinataire</th>
+                                <th scope="col">Date</th>
+                                <th scope="col">
+                                    statut
+                                    <select class="form-select" id="floatingSelect" aria-label="State">
+                                        <option selected>tout</option>
+                                        <option value="1">livré</option>
+                                        <option value="2">échoué</option>
+                                        <option value="3">programmé</option>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>le web-binaire est prévu...</td>
+                                <td>Cloud-client</td>
+                                <td>2016-05-25</td>
+                                <td>échoué</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>La reunion commence dans....</td>
+                                <td>Cloud Steroids</td>
+                                <td>2014-12-05</td>
+                                <td>livré</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Bonjour, votre code est..</td>
+                                <td>Amichia Dani</td>
+                                <td>2011-08-12</td>
+                                <td>livré</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>Vous etes tous inviter à mon anniv...</td>
+                                <td>M'Sweet Plan'S</td>
+                                <td>2012-06-11</td>
+                                <td>programmé</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td> Votre commande n°20v32 est...</td>
+                                <td>AF food</td>
+                                <td>2011-04-19</td>
+                                <td>écoué</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- End small tables -->
 
-
-        </div>
-    </div>    
+                </div>
+            </div>
+        </div>   
 </body>
 </html>
