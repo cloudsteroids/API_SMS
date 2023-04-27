@@ -6,7 +6,12 @@
     include('../treatment/script/signup_treatment.php');
 ?>
 
+<?
+$message_erreur='';
 
+$message_succes='';
+
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -19,17 +24,25 @@
     <title>Inscription</title>
 </head>
 <body style="background-color:#1072AE;">
-
+<?php
+            if(isset($message_erreur)){?>  
+            <div class="message_erreur"><?php echo($message_erreur);?></div>
+            <?php
+            }
+        ?>
 <div class="SignUp">
 
         <!-- Issertion image  -->
         <div class="image">
             <img src="../assets/image/sms.png" alt="">
         </div>
+        
 
+        
         <!-- Formulaire  -->
 
         <div class="myforms">
+        
 
         <h2>Inscription</h2>
             <form method="POST" action="">
