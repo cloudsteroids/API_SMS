@@ -1,0 +1,99 @@
+.send {
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+    border-color: #fff;
+    background-color: #fff;
+  }
+  
+/* Modal styles */
+
+.modal .modal-dialog {
+    max-width: 400px;
+}
+.modal .modal-header, .modal .modal-body, .modal .modal-footer {
+    padding: 20px 30px;
+}
+.modal .modal-content {
+    border-radius: 3px;
+}
+.modal .modal-footer {
+    background: #ecf0f1;
+    border-radius: 0 0 3px 3px;
+}
+.modal .modal-title {
+    display: inline-block;
+}
+.modal .form-control {
+    border-radius: 2px;
+    box-shadow: none;
+    border-color: #dddddd;
+}
+.modal textarea.form-control {
+    resize: vertical;
+}
+.modal .btn {
+    border-radius: 2px;
+    min-width: 100px;
+}	
+.modal form label {
+    font-weight: normal;
+}	
+
+   /*--------barre de recherche----------*/
+.search {
+display: flex;
+align-items: center;
+right: float;
+}
+.search input{
+width: 200px;
+border: 2px solid #0c0d0d;
+padding: 5px;
+border-radius: 3px;
+}
+.search button{
+position: absolute;
+margin-left: 160px;
+}
+
+/*--table design start----*/ 
+thead {
+background-color: #7b93bd;
+}	   		
+    
+.modif {
+color:#0b07ff;
+}
+    
+.delete {
+color:#ED0010;
+}
+/*--table design end----*/ 
+
+/*----Pack-------*/
+.portlet .portlet {
+    align-items: center;
+    margin-bottom: 1rem;
+    margin: 10px;
+    width: 200px;
+}
+
+.portlet .portlet {
+    margin-bottom: 1rem;
+}
+.theme-light .portlet {
+    background: #fff;
+    border-color: #9d96ed;
+}
+.portlet {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 0.5rem;
+}
