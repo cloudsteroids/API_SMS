@@ -15,16 +15,26 @@
     <?php
         include('../../nav/nav_horizontal.php');
     ?>
-    <div class="contain">
+    <div class="containn" id="containn">
+        <div class="pagetitle">
+            <h1>CONTACT</h1>
+            <nav>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../dashboard.php">Dashboard</a></li>
+                    <li class="breadcrumb-item">Répertoire</li>
+                    <li class="breadcrumb-item active">Contact</li>
+                </ol>
+            </nav>
+        </div><!-- End Page Title -->
         <section class="section">        
             <div class="row">
-                <div class="col-sm-6 p-0 flex justify-content-lg-start justify-content-center send">
+                <div class="col-sm-9 p-2 flex justify-content-lg-start justify-content-center send">
                     <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#ajoutcontact"><i class="bi bi-person-add"></i> add User</button>
                     <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#ajoutcontact"><i class="bi bi-people"></i> add multiples Users</button>
                     <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#deletecontact"><i class="bi bi-person-fill-x"></i> delete user</button>
                     <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#"><i class="bi bi-box-arrow-in-down"></i> export</button>
                 </div>
-                <div class="col-sm-6 p-0 flex justify-content-lg-end justify-content-center send">
+                <div class="col-sm-3 p-2 flex justify-content-lg-end justify-content-center send">
                     <div class="search">
                         <input type="search" placeholder="type to search" >
                         <button class="btn btn-secondary" ><i class="bi bi-search"></i></button>
@@ -152,7 +162,7 @@
 
             <!----------------------------ajouter un contact-modal start------------------------------------->
             <div class="modal fade" tabindex="-1" id="ajoutcontact" role="dialog">
-                <div class="modal-dialog" role="document">
+                <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
                             <h5 class="modal-title">Ajouter un contact</h5>
@@ -189,7 +199,7 @@
             </div>
       				   <!----Modifier un contact-modal start--------->
             <div class="modal fade" tabindex="-1" id="modifcontact" role="dialog">
-                <div class="modal-dialog" role="document">
+                <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
                             <h5 class="modal-title">Modifier un contact</h5>
