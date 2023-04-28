@@ -38,6 +38,17 @@
     height: 85%;
 }
 
+#containn{
+    margin-top: 60px;
+    padding: 20px 30px;
+    transition: all 0.3s;
+  }
+  @media (max-width: 1199px) {
+    #containn {
+      padding: 20px;
+    }
+  }
+
 .logo{
     position: relative;
     width: 100%;
