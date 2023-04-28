@@ -17,6 +17,9 @@
         include('../../nav/nav_horizontal.php');
     ?>
         <div class="contain">
+            <div>
+                
+            </div>
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">Historique des SMS</h5>
