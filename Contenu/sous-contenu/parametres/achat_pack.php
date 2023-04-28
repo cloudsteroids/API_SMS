@@ -16,7 +16,16 @@
     <?php
         include('../../nav/nav_horizontal.php');
     ?>
-        <div class="contain">
+        <div class="containn" id="containn">
+            <div class="pagetitle">
+                <h1>ACHAT DE PACK SMS</h1>
+                <nav>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="../dashboard.php">Dashboard</a></li>
+                        <li class="breadcrumb-item active">Historique des sms</li>
+                    </ol>
+                </nav>
+            </div><!-- End Page Title -->
             <section class="section">
                 <div class="content">
                     <div class="container-fluid">
