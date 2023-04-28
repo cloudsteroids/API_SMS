@@ -16,15 +16,25 @@
     <?php
         include('../../nav/nav_horizontal.php');
     ?>
-        <div class="contain">
+        <div class="containn" id="containn">
+            <div class="pagetitle">
+                <h1>LISTE DE DIFFUSION</h1>
+                <nav>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="../dashboard.php">Dashboard</a></li>
+                        <li class="breadcrumb-item">Répertoire</li>
+                        <li class="breadcrumb-item active">liste diffusion</li>
+                    </ol>
+                </nav>
+            </div><!-- End Page Title -->
             <section class="section">
                 <div class="row">
-                    <div class="col-sm-6 p-0 flex justify-content-lg-start justify-content-center send">
+                    <div class="col-sm-9 p-2 flex justify-content-lg-start justify-content-center send">
                         <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#ajoutlist"><i class="bi bi-people-fill"></i>add Group</button>
                         <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#deletelist"><i class="bi bi-person-fill-x"></i> delete group</button>
                         <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#"><i class="bi bi-box-arrow-in-down"></i> export</button>
                     </div>
-                    <div class="col-sm-6 p-0 flex justify-content-lg-end justify-content-center send">
+                    <div class="col-sm-3 p-2 flex justify-content-lg-end justify-content-center send">
                         <div class=" search ">
                             <input type="search" placeholder="type to search" >
                             <button class="btn btn-secondary" ><i class="bi bi-search"></i></button>
@@ -149,12 +159,11 @@
                 </div>
                 <!------------------------ajouter une liste de diffusion---------------------->
                 <div class="modal fade" tabindex="-1" id="ajoutlist" role="dialog">
-                    <div class="modal-dialog" role="document">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h5 class="modal-title">Création d'une liste</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
                                 </button>
                             </div>
                             <div class="modal-body">
@@ -178,7 +187,7 @@
 
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">supprimer</button>
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
                                 <button type="button" class="btn btn-success">Ajouter</button>
                             </div>
                         </div>
@@ -186,12 +195,11 @@
                 </div>
       				   <!----Modifier une liste de diffusion-modal start--------->
                 <div class="modal fade" tabindex="-1" id="modiflist" role="dialog">
-                    <div class="modal-dialog" role="document">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h5 class="modal-title">Modifier une liste de diffusion</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
                                 </button>
                             </div>
                             <div class="modal-body">
