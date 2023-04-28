@@ -16,13 +16,20 @@
     <?php
         include('../../nav/nav_horizontal.php');
     ?>
-        <div class="contain">
-            <div>
-                
-            </div>
+        <div class="containn" id="containn">
+            <div class="pagetitle">
+                <h1>Historique des SMS</h1>
+                <nav>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="../dashboard.php">Dashboard</a></li>
+                        <li class="breadcrumb-item">Messagerie</li>
+                        <li class="breadcrumb-item active">Historique des sms</li>
+                    </ol>
+                </nav>
+            </div><!-- End Page Title -->
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Historique des SMS</h5>
+                    <!--<h5 class="card-title"></h5> -->
                     <table class="table table-sm">
                         <thead>
                             <tr>
