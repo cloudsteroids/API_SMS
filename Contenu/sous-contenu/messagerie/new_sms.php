@@ -2,6 +2,10 @@
     <!-- Header -->
 
     <?php include('../../nav/head.php');   ?>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+
+
     
     <title>envoyer SMS</title>
     <!-- NAV VERTICALE -->
@@ -15,6 +19,16 @@
         include('../../nav/nav_horizontal.php');
     ?> 
         <div class="containn">
+            <div class="pagetitle">
+                <h1>NOUVEAU SMS</h1>
+                <nav>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="../dashboard.php">Dashboard</a></li>
+                        <li class="breadcrumb-item">Messagerie</li>
+                        <li class="breadcrumb-item active">Nouveau sms</li>
+                    </ol>
+                </nav>
+            </div><!-- End Page Title -->
                 
             <div class="option_send">
 
