@@ -63,11 +63,11 @@ thead {
 background-color: #7b93bd;
 }	   		
     
-.modif {
+tbody .modif {
 color:#0b07ff;
 }
     
-.delete {
+tbody .delete {
 color:#ED0010;
 }
 /*--table design end----*/ 
