@@ -16,7 +16,17 @@
     <?php
         include('../../nav/nav_horizontal.php');
     ?>
-        <div class="contain">
+        <div class="containn" id="containn">
+            <div class="pagetitle">
+                <h1>CONTACTEZ-SUPPORT</h1>
+                <nav>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="../dashboard.php">Dashboard</a></li>
+                        <li class="breadcrumb-item">Paramètre</li>
+                        <li class="breadcrumb-item active">Support</li>
+                    </ol>
+                </nav>
+            </div><!-- End Page Title -->
             <section class="section contact">
                 <div class="row gy-4">
                     <div class="col-xl-6">
