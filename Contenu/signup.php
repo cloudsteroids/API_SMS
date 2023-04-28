@@ -1,3 +1,17 @@
+<?php
+    include('../treatment/actions/connexion.php');
+?>
+
+<?php
+    include('../treatment/script/signup_treatment.php');
+?>
+
+<?
+$message_erreur='';
+
+$message_succes='';
+
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -10,20 +24,28 @@
     <title>Inscription</title>
 </head>
 <body style="background-color:#1072AE;">
-
+<?php
+            if(isset($message_erreur)){?>  
+            <div class="message_erreur"><?php echo($message_erreur);?></div>
+            <?php
+            }
+        ?>
 <div class="SignUp">
 
         <!-- Issertion image  -->
         <div class="image">
             <img src="../assets/image/sms.png" alt="">
         </div>
+        
 
+        
         <!-- Formulaire  -->
 
         <div class="myforms">
+        
 
         <h2>Inscription</h2>
-            <form>
+            <form method="POST" action="">
 
                 <div class="mb-3">
                     <label for="Username" class="form-label">Nom d'utilisateur</label>
@@ -50,19 +72,19 @@
 
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Mot de passe</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
+                    <input type="password" name="password_1" class="form-control" id="exampleInputPassword1">
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Confirmation de mot de passe</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
+                    <input type="password" name="password_2" class="form-control" id="exampleInputPassword1">
                 </div>
 
                 <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1"> 
                     <label class="form-check-label" for="exampleCheck1">J'accepte les <a href="#">termes et les conditions d'utilisations</a> </label>
+                    <input type="checkbox" name="checkbox" class="form-check-input" id="exampleCheck1"> 
                 </div>
 
-                <button type="submit" class="btn btn-primary">S'inscrire</button>
+                <button type="submit" name="inscription" class="btn btn-primary">S'inscrire</button>
             </form>
                 <div class="parametre2">
                     <span><a href="login.php">Se Connecter</a></span>
@@ -73,3 +95,4 @@
 
 </body>
 </html>
+

@@ -10,3 +10,9 @@ function popupEcho(val)
         document.getElementById('popup').style.display="none";
     }
 }
+
+if($connexion){
+            $pref = uniqid('CS_');
+            $test = uniqid($pref);
+            echo($test);
+        }
