@@ -173,7 +173,7 @@ section {
   transition: all 0.5s;
   z-index: 997;
   height: 90px;
-  background-color: #fff;
+  background-color: #ffff;
 }
 
 .header.sticked {
@@ -412,7 +412,7 @@ section {
   .navbar .active,
   .navbar .active:focus,
   .navbar li:hover>a {
-    color: #fff;
+    color: #ffff;
   }
 
   .navbar .getstarted,
@@ -480,7 +480,7 @@ section {
     content: "";
     position: fixed;
     inset: 0;
-    background: rgba(24, 188, 243, 0.8);
+    background: #ffff;
     z-index: 9996;
   }
 }
