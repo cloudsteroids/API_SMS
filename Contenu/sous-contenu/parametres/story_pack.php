@@ -17,18 +17,6 @@
         include('../../nav/nav_horizontal.php');
     ?>
         <div class="containn" id="containn">
-            <div class="pagetitle">
-                <h1>HISTORIQUE DES PACKS SMS</h1>
-                <nav>
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="../dashboard.php">Dashboard</a></li>
-                        <li class="breadcrumb-item">Paramètre</li>
-                        <li class="breadcrumb-item active">Historique des Packs</li>
-                    </ol>
-                </nav>
-            </div><!-- End Page Title -->
-                
-                
 
 
         </div>
