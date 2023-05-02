@@ -18,18 +18,7 @@
     <?php
         include('../../nav/nav_horizontal.php');
     ?> 
-        <div class="containn">
-            <div class="pagetitle">
-                <h1>NOUVEAU SMS</h1>
-                <nav>
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="../dashboard.php">Dashboard</a></li>
-                        <li class="breadcrumb-item">Messagerie</li>
-                        <li class="breadcrumb-item active">Nouveau sms</li>
-                    </ol>
-                </nav>
-            </div><!-- End Page Title -->
-                
+        <div class="containn">     
             <div class="option_send">
 
                 <input class="" type="radio" id="hide" onclick="hideShowDiv(1)" name="lang" id="">
