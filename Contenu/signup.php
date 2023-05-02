@@ -24,9 +24,15 @@ $message_succes='';
     <title>Inscription</title>
 </head>
 <body style="background-color:#1072AE;">
-<?php
+        <?php 
             if(isset($message_erreur)){?>  
             <div class="message_erreur"><?php echo($message_erreur);?></div>
+            <?php
+            }
+        ?>
+        <?php 
+            if(isset($message_succes)){?>  
+            <div class="message_succes"><?php echo($message_succes);?></div>
             <?php
             }
         ?>

@@ -143,14 +143,6 @@
 
 
 
-
-
-
-
-
-
-
-
 /*NavBAR horizontale */
 
 .session{
@@ -170,8 +162,9 @@
 .session a .img_deconnexion:hover{
     width: 75%;
     height: 70%;
-   
 }
+
+
 
 .session a .img_profile{
         width: 100%;
@@ -179,6 +172,9 @@
         border-radius:60px ;  
 
 }
+
+
+
 
 .session a .img_deconnexion{
     
@@ -439,15 +435,6 @@
     border-top-left-radius: 10px ;
     border-top-right-radius: 10px ;
 }
-
-
-
-
-
-
-
-
-
 
 
 

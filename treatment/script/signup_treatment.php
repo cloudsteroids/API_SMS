@@ -69,7 +69,7 @@ if(isset($_POST['inscription'])){
                             ('$id_compte', '$id_user', '$nombre_sms', '$sender_name', '$statut_compte');");
                 if($req_1 && $req_2)
                 {
-                    $message_succes[]='Inscription Réussie !';
+                    $message_succes='Inscription Réussie !';
                     header("Refresh:4");
                 }
                 }
