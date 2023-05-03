@@ -1,3 +1,20 @@
+<?php
+    include('../treatment/actions/connexion.php');
+?>
+
+<?php
+    include('../treatment/script/login_treatment.php');
+?>
+
+<?
+$message_erreur='';
+
+$message_succes='';
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -11,20 +28,28 @@
 </head>
 
 <body style="background-color:#1072AE;">
+        <?php 
 
+        //Affichage du message en cas d'erreur  
+            if(isset($message_erreur)){?>  
+            <div class="message_erreur"><?php echo($message_erreur);?></div>
+            <?php
+            }
+        ?>
 <div class="SignUp">
 
         <!-- Issertion image  -->
         <div class="image1">
             <img src="../assets/image/sms-img21.png" alt="">
         </div>
+        
 
         <!-- Formulaire  -->
 
         <div class="myforms">
-
+        
         <h2>Connexion</h2>
-            <form>
+            <form method="POST">
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Adresse Email</label>
                     <input type="email" name="email_user" class="form-control" id="exampleFormControlInput1">
@@ -32,9 +57,9 @@
 
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Mot de passe</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
+                    <input type="password" name="password" class="form-control" id="exampleInputPassword1">
                 </div>
-                <button type="submit" class="btn btn-primary">Connexion</button>
+                <button type="submit" name="Connexion"  class="btn btn-primary">Connexion</button>
                 <div class="parametre">
                     <span class="span1"><a href="signup.php">S'inscrire</a></span>
                     <span class="span2"><a href="">Mot de passe oublié ?</a></span>

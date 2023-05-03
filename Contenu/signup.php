@@ -51,11 +51,11 @@ $message_succes='';
         
 
         <h2>Inscription</h2>
-            <form method="POST" action="">
+            <form method="POST">
 
                 <div class="mb-3">
                     <label for="Username" class="form-label">Nom d'utilisateur</label>
-                    <input type="text" name="name_user" class="form-control" id="Username">
+                    <input type="text" name="name_user" class="form-control" id="Username" placeholder="Saisir lettres uniquement">
                     <div id="" class="form-text"></div>
                 </div>
 
@@ -67,10 +67,10 @@ $message_succes='';
 
                 <div class="mb-3">
                     <label for="telephone" class="form-label">Téléphone</label>
-                    <input type="text" name="telephone" class="form-control" id="telephone">
+                    <input type="text" name="telephone" class="form-control" id="telephone" placeholder="Saisir le préfixe +225">
                     <div id="" class="form-text"></div>
                 </div>
-
+        
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Adresse Email</label>
                     <input type="email" name="email_user" class="form-control" id="exampleFormControlInput1">

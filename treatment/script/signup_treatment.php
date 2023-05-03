@@ -22,7 +22,7 @@ if(isset($_POST['inscription'])){
 
         $name_user= htmlspecialchars(trim($_POST['name_user']));
         $sender_name=htmlspecialchars(trim($_POST['sender_name']));
-        $telephone=htmlspecialchars(trim($_POST['telephone']));
+        $telephone=htmlspecialchars(str_replace(' ','',$_POST['telephone']));
         $email_user=htmlspecialchars(trim($_POST['email_user']));
         $password_1=htmlspecialchars(password_hash(trim($_POST['password_1']), PASSWORD_BCRYPT));
         $password_2=htmlspecialchars(trim($_POST['password_2']));
@@ -34,7 +34,26 @@ if(isset($_POST['inscription'])){
         }
         else{
 
-             //Dans le cas ou les mots de passe correspondents, on verifie si l'utilisateur existe deja 
+            $N_C_senderName= strlen($sender_name)<=11;
+
+            //Expressions regulieres
+            
+            if(!preg_match("/^[a-zA-Z-' ]*$/", $name_user) || !$N_C_senderName
+              || !preg_match('/^\\+?[1-9][0-9]{7,14}$/', $telephone)
+              || !filter_var($email_user, FILTER_VALIDATE_EMAIL)
+              || !preg_match('/^(?=.*?[A-Z])(?=.*?[#?!@$%^&*-]).{8,}$/', $password_1)
+              ){
+                $message_erreur='Assurez les conditions : 
+                <br> - Nom utilisateur : Alpha numerique interdit ! <br>
+                -Entrez un telephone Valide <br>
+                -Sender Name 11 Caracteres Maximum <br>
+                -Mot de passe : Minimun = 8 Caracteres , 1 Majuscule, 1 Alpha Numerique <br>';
+                header("Refresh:20");
+            }
+            else{
+                    //Les saisies sont au bon format
+
+                     //Dans le cas ou les mots de passe correspondents, on verifie si l'utilisateur existe deja 
 
             $voir = $connexion->query("SELECT * FROM utilisateurs WHERE `mail_user`='$email_user'");
             $count = $voir->rowCount();
@@ -69,20 +88,18 @@ if(isset($_POST['inscription'])){
                             ('$id_compte', '$id_user', '$nombre_sms', '$sender_name', '$statut_compte');");
                 if($req_1 && $req_2)
                 {
-                    $message_succes='Inscription Réussie !';
+                    $message_succes='Inscription Réussie. <br>
+                                    Connectez-Vous !';
                     header("Refresh:4");
                 }
                 }
+            }
+
+            
         }
     }else{
         $message_erreur='Veillez remplir tous les champs !';
         header("Refresh:4.8");
     }
 }
-
-
-
-
-
-
 ?>

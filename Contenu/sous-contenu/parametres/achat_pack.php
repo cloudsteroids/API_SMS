@@ -1,3 +1,14 @@
+<?php
+session_start();
+?>
+<?php
+$id = $_SESSION['id'];
+    if(!isset($id)){
+        header('Location:../../index.php');
+    }
+?>
+
+
 
     <!-- Header -->
 
