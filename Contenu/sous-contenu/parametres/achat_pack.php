@@ -26,161 +26,114 @@
                     </ol>
                 </nav>
             </div><!-- End Page Title -->
-            <section class="section">
-                <div class="content">
-                    <div class="container-fluid">
-                        <div class="row portlet-row-fill-xl">
+            <!-- ======= Pricing Section ======= -->
+            <section id="pricing" class="pricing sections-bg">
+            <div class="container" data-aos="fade-up">
+                <div class="row g-4 py-lg-5" data-aos="zoom-out" data-aos-delay="100">
 
-                            <!---------------- Listes des packs ------------------------------->
-                            <div class="row">
-                                <div class="col-md-12">                                      
-                                    <div class="portlet">
-                                        <div class="portlet-header portlet-header-bordered">
-                                            <h3 class="portlet-title">Nos Packs</h3>
-                                        </div>
-                                        <div class="portlet-body">
-                                            <div class="row">                                                              
-                                                <div class="portlet mb-md-0">
-                                                    <div class="portlet-header portlet-header-bordered">
-                                                        <h3 class="portlet-title">Basic </h3>
-                                                    </div>
-                                                    <div class="portlet-body">
-                                                        <ul class="list-group">
-                                                            <li class="list-group-item text-center" style="size: 100px;">
-                                                                <strong><span class="badge border-primary border-1 text-primary badge-xl"> 100 sms</span></strong>
-                                                            </li>
-                                                            <li class="list-group-item"></li>
-                                                            <li class="list-group-item text-center">2,600 XOF</li>
-                                                            <li class="list-group-item"></li>
-                                                            <li class="list-group-item" style="background-color: #5e61ed;">
-                                                                <form action="" method="post">
-                                                                    <input type="hidden" name="" value="">                                                                
-                                                                    <input type="text" name="pack" value="2" style="display: none;">
-                                                                    <button type="submit" class="btn btn-primary">Acheté</button>
-                                                                </form>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="portlet mb-md-0">
-                                                    <div class="portlet-header portlet-header-bordered">
-                                                        <h3 class="portlet-title">Medium </h3>
-                                                    </div>
-                                                    <div class="portlet-body">
-                                                        <ul class="list-group">
-                                                            <li class="list-group-item text-center" style="size: 100px;">
-                                                                <strong><span class="badge border-primary border-1 text-primary badge-xl"> 500 sms</span></strong>
-                                                            </li>
-                                                            <li class="list-group-item"></li>
-                                                            <li class="list-group-item text-center">12,500 XOF</li>
-                                                            <li class="list-group-item"></li>
-                                                            <li class="list-group-item" style="background-color: #5e61ed;">
-                                                                <form action="" method="post">
-                                                                    <input type="hidden" name="" value="">                                                                
-                                                                    <input type="text" name="pack" value="3" style="display: none;">
-                                                                    <button type="submit" class="btn btn-primary">Acheté</button>
-                                                                </form>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="portlet mb-md-0">
-                                                    <div class="portlet-header portlet-header-bordered">
-                                                        <h3 class="portlet-title">Premium </h3>
-                                                    </div>
-                                                    <div class="portlet-body">
-                                                        <ul class="list-group">
-                                                            <li class="list-group-item text-center" style="size: 100px;">
-                                                                <strong><span class="badge border-primary border-1 text-primary badge-xl"> 1000 sms</span></strong>
-                                                            </li>
-                                                            <li class="list-group-item"></li>
-                                                            <li class="list-group-item text-center">24,000 XOF</li>
-                                                            <li class="list-group-item"></li>
-                                                            <li class="list-group-item" style="background-color: #5e61ed;">
-                                                                <form action="" method="post">
-                                                                    <input type="hidden" name="" value="">                                                                
-                                                                    <input type="text" name="pack" value="4" style="display: none;">
-                                                                    <button type="submit" class="btn btn-primary">Acheté</button>
-                                                                </form>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="portlet mb-md-0">
-                                                    <div class="portlet-header portlet-header-bordered">
-                                                        <h3 class="portlet-title">Smart </h3>
-                                                    </div>
-                                                    <div class="portlet-body">
-                                                        <ul class="list-group">
-                                                            <li class="list-group-item text-center" style="size: 100px;">
-                                                                <strong><span class="badge border-primary border-1 text-primary badge-xl"> 5000 sms</span></strong>
-                                                            </li>
-                                                            <li class="list-group-item"></li>
-                                                            <li class="list-group-item text-center">115,000 XOF</li>
-                                                            <li class="list-group-item"></li>
-                                                            <li class="list-group-item" style="background-color: #5e61ed;">
-                                                                <form action="" method="post">
-                                                                    <input type="hidden" name="" value="">                                                                
-                                                                    <input type="text" name="pack" value="5" style="display: none;">
-                                                                    <button type="submit" class="btn btn-primary">Acheté</button>
-                                                                </form>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="portlet mb-md-0">
-                                                    <div class="portlet-header portlet-header-bordered">
-                                                        <h3 class="portlet-title">Hyper </h3>
-                                                    </div>
-                                                    <div class="portlet-body">
-                                                        <ul class="list-group">
-                                                            <li class="list-group-item text-center" style="size: 100px;">
-                                                                <strong><span class="badge border-primary border-1 text-primary badge-xl"> 10000 sms</span></strong>
-                                                            </li>
-                                                            <li class="list-group-item"></li>
-                                                            <li class="list-group-item text-center">210,000 XOF</li>
-                                                            <li class="list-group-item"></li>
-                                                            <li class="list-group-item" style="background-color: #5e61ed;">
-                                                                <form action="" method="post">
-                                                                    <input type="hidden" name="" value="">                                                                
-                                                                    <input type="text" name="pack" value="6" style="display: none;">
-                                                                    <button type="submit" class="btn btn-primary">Acheté</button>
-                                                                </form>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="portlet mb-md-0">
-                                                    <div class="portlet-header portlet-header-bordered">
-                                                        <h3 class="portlet-title">Pro </h3>
-                                                    </div>
-                                                    <div class="portlet-body">
-                                                        <ul class="list-group">
-                                                            <li class="list-group-item text-center" style="size: 100px;">
-                                                                <strong><span class="badge border-primary border-1 text-primary badge-xl"> 15000 sms</span></strong>
-                                                            </li>
-                                                            <li class="list-group-item"></li>
-                                                            <li class="list-group-item text-center">300,000 XOF</li>
-                                                            <li class="list-group-item"></li>
-                                                            <li class="list-group-item" style="background-color: #5e61ed;">
-                                                                <form action="" method="post">
-                                                                    <input type="hidden" name="_token" value="">                                                                
-                                                                    <input type="text" name="pack" value="7" style="display: none;">
-                                                                    <button type="submit" class="btn btn-primary">Acheté</button>
-                                                                </form>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>    
+                <div class="col-lg-4">
+                    <div class="pricing-item">
+                    <h3>Small</h3>
+                    <div class="icon">
+                        <i class="bi bi-emoji-laughing"></i>
                     </div>
+                    <h4><sup>Fcfa</sup>2000<span> / souscription</span></h4>
+                    <ul>
+                        <li><i class="bi bi-check"></i> 80 Sms</li>
+                        <li><i class="bi bi-check"></i> Support 7/24</li>
+                        <li><i class="bi bi-check"></i> Forfait Illimité</li>
+                    </ul>
+                    <div class="text-center"><a href="#" class="buy-btn">Acheter</a></div>
+                    </div>
+                </div><!-- End Pricing Item -->
+
+                <div class="col-lg-4">
+                    <div class="pricing-item featured">
+                    <h3>Premium</h3>
+                    <div class="icon">
+                        <i class="bi bi-gem"></i>
+                    </div>
+
+                    <h4><sup>Fcfa</sup>5000<span> / souscription</span></h4>
+                    <ul>
+                        <li><i class="bi bi-check"></i> 1000 Sms</li>
+                        <li><i class="bi bi-check"></i> Support 7/24</li>
+                        <li><i class="bi bi-check"></i>Forfait Illimité</li>
+                    </ul>
+                    <div class="text-center"><a href="#" class="buy-btn">Acheter</a></div>
+                    </div>
+                </div><!-- End Pricing Item -->
+
+                <div class="col-lg-4">
+                    <div class="pricing-item">
+                    <h3>mini</h3>
+                    <div class="icon">
+                        <i class="bi bi-emoji-smile"></i>
+                    </div>
+                    <h4><sup>Fcfa</sup>3000<span> / souscription</span></h4>
+                    <ul>
+                        <li><i class="bi bi-check"></i> 150 Sms</li>
+                        <li><i class="bi bi-check"></i> Support 7/24</li>
+                        <li><i class="bi bi-check"></i> Forfait Illimité</li>
+                    </ul>
+                    <div class="text-center"><a href="#" class="buy-btn">Acheter </a></div>
+                    </div>
+                </div><!-- End Pricing Item -->
+
+                <div class="col-lg-4">
+                    <div class="pricing-item">
+                    <h3>Small</h3>
+                    <div class="icon">
+                        <i class="bi bi-emoji-laughing"></i>
+                    </div>
+                    <h4><sup>Fcfa</sup>2000<span> / souscription</span></h4>
+                    <ul>
+                        <li><i class="bi bi-check"></i> 80 Sms</li>
+                        <li><i class="bi bi-check"></i> Support 7/24</li>
+                        <li><i class="bi bi-check"></i> Forfait Illimité</li>
+                    </ul>
+                    <div class="text-center"><a href="#" class="buy-btn">Acheter</a></div>
+                    </div>
+                </div><!-- End Pricing Item -->
+
+                <div class="col-lg-4">
+                    <div class="pricing-item featured">
+                    <h3>Small</h3>
+                    <div class="icon">
+                        <i class="bi bi-emoji-laughing"></i>
+                    </div>
+                    <h4><sup>Fcfa</sup>2000<span> / souscription</span></h4>
+                    <ul>
+                        <li><i class="bi bi-check"></i> 80 Sms</li>
+                        <li><i class="bi bi-check"></i> Support 7/24</li>
+                        <li><i class="bi bi-check"></i> Forfait Illimité</li>
+                    </ul>
+                    <div class="text-center"><a href="#" class="buy-btn">Acheter</a></div>
+                    </div>
+                </div><!-- End Pricing Item -->
+
+                <div class="col-lg-4">
+                    <div class="pricing-item">
+                    <h3>Small</h3>
+                    <div class="icon">
+                        <i class="bi bi-emoji-laughing"></i>
+                    </div>
+                    <h4><sup>Fcfa</sup>2000<span> / souscription</span></h4>
+                    <ul>
+                        <li><i class="bi bi-check"></i> 80 Sms</li>
+                        <li><i class="bi bi-check"></i> Support 7/24</li>
+                        <li><i class="bi bi-check"></i> Forfait Illimité</li>
+                    </ul>
+                    <div class="text-center"><a href="#" class="buy-btn">Acheter</a></div>
+                    </div>
+                </div><!-- End Pricing Item -->
+
                 </div>
-            </section>      
+
+            </div>
+        </section><!-- End Pricing Section -->     
         </div>   
+
+        
 </body>
 </html>
