@@ -16,7 +16,7 @@
     <?php
         include('../../nav/nav_horizontal.php');
     ?>
-        <div class="containn" id="containn">
+        <div class="containn" id="containn ">
             <div class="card">
                 <div class="card-body">
                     <!--<h5 class="card-title"></h5> -->
