@@ -221,6 +221,12 @@
 }
 
 
+.sms_rest{
+    color:#FF6600;
+    font-size: 20px;
+}
+
+
 
 
 /*CSS DU CONTENU DE LA PAGE ENVOIE SMS*/
@@ -230,11 +236,12 @@
     position: relative;
     display: block;
     background-color:#f5f5f5bb;;
-    top: 50px;
+    top: 0;
     height: 12%;
     width: 90%;
     font-size: 17px;
     margin: auto;
+    margin-bottom: 40px;
     transition-duration: 0.5s;
     box-shadow: 0 5px 30px 0 rgba(82, 63, 105, 0.2);
     padding: 20px;
@@ -302,10 +309,10 @@
 }
 
 .containn .form_sms{
-    top: 90px;
+    top: 40px;
     position: relative;
-    height: 50%;
-    width: 80%;
+    height: 100%;
+    width: 100%;
     display: block;
     margin: auto;
 }
@@ -320,8 +327,8 @@
     position: relative;
     display: block;
     margin: auto;
-    width: 90%;
-    height: 60%;
+    width: 70%;
+    height: 35%;
     font-size: 18px;
     line-height: 1.5;
     outline: none;
@@ -334,6 +341,16 @@
 .containn .form_sms textarea:hover{
     border: 2px solid  #2d76b2;
     transition-duration: 0.5s;
+}
+
+
+.varchar{
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color : #2d76b2;
 }
 
 .containn .form_sms .button{

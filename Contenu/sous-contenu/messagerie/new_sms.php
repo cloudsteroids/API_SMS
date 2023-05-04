@@ -1,33 +1,61 @@
-<?php
-session_start();
-?>
-<?php
-$id = $_SESSION['id'];
-    if(!isset($id)){
-        header('Location:../../index.php');
-    }
-?>
-
-
+ 
 
     <!-- Header -->
 
-    <?php include('../../nav/head.php');   ?>
+    <?php include('../../nav/head.php');?>
     
     <title>envoyer SMS</title>
     <!-- NAV VERTICALE -->
     <?php
         include('../../nav/nav_vertical.php');
     ?>
+    
+    <?php include('../../../treatment/script/send_sms.php');?>
 
     <!-- NAV Horizontale -->
     <div class="nav_horizontal">
+    
     <?php
         include('../../nav/nav_horizontal.php');
     ?> 
+    <?
+    
+    $message_erreur='';
+
+    $message_succes='';
+
+    ?>
+    
+
+
+
+         <!-- Affichage des messages -->
+         <?php 
+            if(isset($message_erreur)){?>  
+            <div class="message_erreur"><?php echo($message_erreur);?></div>
+            <?php
+            }
+        ?>
+         <?php 
+            if(isset($message_succes)){?>  
+            <div class="message_succes"><?php echo($message_succes);?></div>
+            <?php
+            }
+        ?>
+        
+        
+        
+    
         <div class="containn">
-                
-            <div class="option_send">
+
+       
+
+            <div class="form_sms">
+
+                <form method="POST" id="ecoute">
+
+
+                <div class="option_send">
 
                 <input class="" type="radio" id="hide" onclick="hideShowDiv(1)" name="lang" id="">
                 <label for="hide">SMS vers contact</label> 
@@ -35,25 +63,20 @@ $id = $_SESSION['id'];
                 <input class="" type="radio" id="show" onclick="hideShowDiv(2)" name="lang" id="">
                 <label for="show">SMS vers liste</label>
 
-                <input id="champ" type="text" placeholder="Entrez un Numero 10 chiffres Ex: 0565282962"></input>
+                <input id="champ" type="text" name="send_number" placeholder="Entrez un Numero 10 chiffres Ex: +2250565282962"></input>
 
-                <select id="deroulant" class="form-select">
-                    <option selected>Open this select menu</option>
-                    <option value="1">One</option>
-                    <option value="3">Three</option>
+                <select id="deroulant" name="list_send" class="form-select">
+                    <option value="">Selectionner un liste</option>
                 </select>
-                
-            </div>
 
-            <div class="form_sms">
+                </div>
 
-                <form action="" method="post">
-
-                    <textarea name="" id=""  placeholder="Saisissez le message"></textarea>
+                    <span class="varchar" size="10">0/160 caractères</span>
+                    <textarea name="message" id="caracters"  placeholder="Saisissez le message"></textarea>
 
 
                     <div class="button">
-                        <button name="" type="submit">Envoyer</button>
+                        <button name="SEND_SMS" type="submit">Envoyer</button>
                         <button onclick="popupEcho()" type="button">Programmer</button>
                     </div>
 
@@ -71,7 +94,7 @@ $id = $_SESSION['id'];
                     <input type="datetime-local" id="date_send" name="date_send">
                     <div class="button">
                         <button onclick="popupRemove()"  type="button">Annuler</button>
-                        <button  type="submit" name="">Valider</button>
+                        <button name="Programmer"  type="submit" name="">Valider</button>
                     </div>
                 </form>
             </div>
@@ -81,3 +104,8 @@ $id = $_SESSION['id'];
 </body>
 </html>
 <script src="../../../assets/js/menu.js"></script>
+<script src="../../../assets/js/char.js"></script>
+
+
+
+

@@ -35,6 +35,7 @@
             else{
                 $message_erreur='Mot de passe incorrect !';
                             header("Refresh:4");
+                            exit();
             }
 
            }
@@ -42,12 +43,14 @@
             $message_erreur='Utilisateur inexistant. <br>
                             Veillez vous inscrire !';
             header("Refresh:4");
+            exit();
            }
 
         } 
         else{
             $message_erreur='Veillez remplir tous les champs !';
                 header("Refresh:4");
+                exit();
         }   
     }
 
