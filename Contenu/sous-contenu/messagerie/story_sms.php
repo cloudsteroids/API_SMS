@@ -17,8 +17,8 @@
     ?>
         <div class="containn">
             <div class="box">   
-                <h2 class="text-center btn"><strong>Historique des SMS</strong> </h2>
-                <button id="myBtn" class="btn-delete button"><i class="fa fa-trash" aria-hidden="true"></i>Supprimer historique</button>
+                <h2 class="text-center btn"><i class="fa fa-history" aria-hidden="true"></i>&nbsp;<strong>Historique des SMS</strong> </h2>
+                <button id="myBtn" class="btn-delete button"><i class="fa fa-trash" aria-hidden="true"></i>&nbsp; Supprimer historique</button>
                 <div id="myModal" class="modal">
                     <!-- Modal content -->
                     <div class="modal-content">
@@ -31,7 +31,7 @@
 
                     </div>
                 </div>
-            <input type="text" id="myInput" onkeyup="searchTable()"  placeholder="Recherche...">
+            <input type="text" id="myInput" onkeyup="searchTable()"  placeholder="Recherche..." class="inputsearch">
             <div class="padding5"></div>
             <table id="customers" class="table" style="width:95%; overflow-x:auto;">
                 <thead>
@@ -51,7 +51,7 @@
                             <td>Groupe2</td>
                             <td>Nous vous souhaitons la bienvenue à Cloud Steroids...</td>
                             <td>Envoyé</td>
-                            <td><button class="btn-green button"><i class="fa fa-eye" aria-hidden="true"></i>voir</button></td>
+                            <td><button class="btn-green button"><i class="fa fa-eye" aria-hidden="true"></i>&nbsp; voir</button></td>
 
                         </tr>
                         <tr>
@@ -59,42 +59,42 @@
                             <td>Groupe2</td>
                             <td>Nous vous souhaitons la bienvenue à Cloud Steroids...</td>
                             <td>Envoyé</td>
-                            <td><button class="btn-green button"><i class="fa fa-eye" aria-hidden="true"></i>voir</button></td>
+                            <td><button class="btn-green button"><i class="fa fa-eye" aria-hidden="true"></i>&nbsp; voir</button></td>
 
                         </tr>
                         <td>26/02/2023 12:15:03:01</td>
                             <td>Groupe2</td>
                             <td>Nous vous souhaitons la bienvenue à Cloud Steroids...</td>
                             <td>Envoyé</td>
-                            <td><button class="btn-green button"><i class="fa fa-eye" aria-hidden="true"></i>voir</button></td>
+                            <td><button class="btn-green button"><i class="fa fa-eye" aria-hidden="true"></i>&nbsp; voir</button></td>
 
                         </tr>
                         <td>26/02/2023 12:15:03:01</td>
                             <td>Groupe2</td>
                             <td>Nous vous souhaitons la bienvenue à Cloud Steroids...</td>
                             <td>Envoyé</td>
-                            <td><button class="btn-green button"><i class="fa fa-eye" aria-hidden="true"></i>voir</button></td>
+                            <td><button class="btn-green button"><i class="fa fa-eye" aria-hidden="true"></i>&nbsp; voir</button></td>
 
                         </tr>
                         <td>26/02/2023 12:15:03:01</td>
                             <td>Groupe2</td>
                             <td>Nous vous souhaitons la bienvenue à Cloud Steroids...</td>
                             <td>Envoyé</td>
-                            <td><button class="btn-green button"><i class="fa fa-eye" aria-hidden="true"></i>voir</button></td>
+                            <td><button class="btn-green button"><i class="fa fa-eye" aria-hidden="true"></i>&nbsp; voir</button></td>
 
                         </tr>
                         <td>26/02/2023 12:15:03:01</td>
                             <td>Groupe2</td>
                             <td>Nous vous souhaitons la bienvenue à Cloud Steroids...</td>
                             <td>Envoyé</td>
-                            <td><button class="btn-green button"><i class="fa fa-eye" aria-hidden="true"></i>voir</button></td>
+                            <td><button class="btn-green button"><i class="fa fa-eye" aria-hidden="true"></i>&nbsp; voir</button></td>
 
                         </tr>
                         <td>26/02/2023 12:15:03:01</td>
                             <td>Groupe2</td>
                             <td>Nous vous souhaitons la bienvenue à Cloud Steroids...</td>
                             <td>Envoyé</td>
-                            <td><button class="btn-green button"><i class="fa fa-eye" aria-hidden="true"></i>voir</button></td>
+                            <td><button class="btn-green button"><i class="fa fa-eye" aria-hidden="true"></i>&nbsp; voir</button></td>
 
                         </tr>
                        
@@ -102,28 +102,28 @@
                             <td>Groupe2</td>
                             <td>Nous vous souhaitons la bienvenue à Cloud Steroids...</td>
                             <td>Envoyé</td>
-                            <td><button class="btn-green button"><i class="fa fa-eye" aria-hidden="true"></i>voir</button></td>
+                            <td><button class="btn-green button"><i class="fa fa-eye" aria-hidden="true"></i>&nbsp; voir</button></td>
 
                         </tr>
                         <td>24/02/2023 12:15:03:01</td>
                             <td>Groupe2</td>
                             <td>Nous vous souhaitons la bienvenue à Cloud Steroids...</td>
                             <td>Envoyé</td>
-                            <td><button class="btn-green button"><i class="fa fa-eye" aria-hidden="true"></i>voir</button></td>
+                            <td><button class="btn-green button"><i class="fa fa-eye" aria-hidden="true"></i>&nbsp; voir</button></td>
 
                         </tr>
                         <td>24/02/2023 12:15:03:01</td>
                             <td>Groupe3</td>
                             <td>Nous vous souhaitons la bienvenue à Cloud Steroids...</td>
                             <td>Retard</td>
-                            <td><button class="btn-green button"><i class="fa fa-eye" aria-hidden="true"></i>voir</button></td>
+                            <td><button class="btn-green button"><i class="fa fa-eye" aria-hidden="true"></i>&nbsp; voir</button></td>
 
                         </tr>
                         <td>26/02/2023 12:15:03:01</td>
                             <td>Groupe2</td>
                             <td>Nous vous souhaitons la bienvenue à Cloud Steroids...</td>
                             <td>Envoyé</td>
-                            <td><button class="btn-green button"><i class="fa fa-eye" aria-hidden="true"></i>voir</button></td>
+                            <td><button class="btn-green button"><i class="fa fa-eye" aria-hidden="true"></i>&nbsp; voir</button></td>
 
                         </tr>
                         

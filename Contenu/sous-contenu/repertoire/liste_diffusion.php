@@ -19,12 +19,12 @@
                 
                 
         <div class="box">   
-                <h2 class="text-center btn"><strong>Liste de diffusion</strong> </h2>
+                <h2 class="text-center btn"><i class="fa fa-share" aria-hidden="true"></i> &nbsp;<strong>Liste de diffusion</strong> </h2>
                 <div class="btn-group">
-                        <button class="btn-row "><i class="fa fa-plus" aria-hidden="true"></i>Ajouter un groupe</button>
-                        <button class="btn-row"><i class="fa fa-upload" aria-hidden="true"></i>Exporter la liste</button>
+                        <button class="btn-row "><i class="fa fa-plus" aria-hidden="true"></i>&nbsp; Ajouter un groupe</button>
+                        <button class="btn-row"><i class="fa fa-upload" aria-hidden="true"></i>&nbsp; Exporter la liste</button>
                 </div>
-            <input type="text" id="myInput" onkeyup="searchTable()"  placeholder="Recherche...">
+            <input type="text" id="myInput" onkeyup="searchTable()"  placeholder="Recherche..." class="inputsearch">
             <div class="padding5"></div>
             <table id="customers" class="table" style="width:95%; overflow-x:auto;">
                 <thead>

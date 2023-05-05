@@ -43,7 +43,7 @@
                 </div>
                 <ul class="menu">
                     <li><a href="../parametres/profil.php">Profil</a></li>
-                    <li><a href="../parametres/achat_pack.php">Achater Packs</a></li>
+                    <li><a href="../parametres/achat_pack.php">Acheter Packs</a></li>
                     <li><a href="../parametres/story_pack.php">Historique Achats</a></li>
                     <li><a href="../parametres/support.php">Contactez Support</a></li> 
                 </ul>
