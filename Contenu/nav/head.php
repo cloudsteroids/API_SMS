@@ -1,3 +1,24 @@
+<?php
+session_start();
+
+$id_user = $_SESSION['id'];
+    if(!isset($id_user)){
+        header('Location:../../index.php');
+    }
+?>
+
+
+<?php
+
+    //INCLURE LA CONNEXION A LA BASE DE DONNEES
+    include('../../../treatment/actions/connexion.php');
+?>
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>

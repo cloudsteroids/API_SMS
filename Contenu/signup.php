@@ -6,12 +6,14 @@
     include('../treatment/script/signup_treatment.php');
 ?>
 
-<?
+<?php
 $message_erreur='';
 
 $message_succes='';
 
 ?>
+
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>

@@ -2,12 +2,26 @@
 session_start();
 ?>
 <?php
-$id = $_SESSION['id'];
-    if(!isset($id)){
+$id_user = $_SESSION['id'];
+    if(!isset($id_user)){
         header('Location:../../index.php');
     }
 ?>
 
+<?php
+
+    //INCLURE LA CONNEXION A LA BASE DE DONNEES
+    include('../../treatment/actions/connexion.php');
+?>
+
+    <!-- Requete pour afficher nombre SMS -->
+    <?php
+
+    $Glob_req = $connexion->query("SELECT * FROM comptes WHERE id_user = '$id_user'");
+
+    $results= $Glob_req->fetch();
+    
+    ?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -81,12 +95,12 @@ $id = $_SESSION['id'];
             <div class="session">
                     <a href=""><img class="img_profile" src="../../assets/image/profile_vide.jpg" alt=""></a>
                     <div class="espace"></div>
-                    <a href="/treatment/actions/deconnexion.php"><img class="img_deconnexion" src="../../assets/image/deconnexion.jpg" alt=""></a>
+                    <a href="../../treatment/actions/deconnexion.php?"><img class="img_deconnexion" src="../../assets/image/deconnexion.jpg" alt=""></a>
             </div>
             
             <div class="info">
                 <div class="text">
-                    <p>SMS restants : </p>
+                    <p>SMS restants : <?php echo('<span class="sms_rest">'.$results['nombre_sms'].' sms'.'</span>'); ?> </p>
                 </div>
                 
                 <a href="parametres/achat_pack.php">Acheter Pack</a>  
