@@ -125,6 +125,24 @@ $id_user = $_SESSION['id'];
             width: 20%;
 
         }
+        .btn-update {
+            font-size: 16px;
+            background-color: green;
+            color: white;
+            height: 30px;
+            border: 0;
+            border-radius: 4px;
+            width: 25%;
+        }
+        .btn-trash {
+            font-size: 16px;
+            background-color: firebrick;
+            color: white;
+            height: 30px;
+            border: 0;
+            border-radius: 4px;
+            width: 25%;
+        }
         input[type=text] {
         width: 160px;
         box-sizing: border-box;
@@ -187,6 +205,23 @@ $id_user = $_SESSION['id'];
         text-decoration: none;
         cursor: pointer;
         }
+        .btn-group .btn-row {
+            background-color: lightslategrey; /* Green */
+            border: none;
+            color: white;
+            padding: 13px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            float: left;
+            margin: 4px;
+            }
+
+            .btn-group .btn-row:hover {
+            background-color: orange;
+            }
     </style>
 
  <script>

@@ -128,16 +128,7 @@
                         
              </tbody>
 
-             <tfoot>
-                        <tr>
-                            <th></th>
-                            <th></th>
-                            <th></th>
-                            <th></th>
-                            <th></th>
 
-                        </tr>
-             </tfoot>
           </table> 
           <div id="pagination">
                 <button id="prev" class="btn-pagination button">Précédent</button>
