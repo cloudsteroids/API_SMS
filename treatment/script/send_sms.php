@@ -140,3 +140,24 @@ if(isset($_POST['SEND_SMS'])){
 }
 
 ?>
+
+
+<!-- SI IL PROGRAMME L'ENVOI D'UN SMS -->
+
+<?php 
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+?>

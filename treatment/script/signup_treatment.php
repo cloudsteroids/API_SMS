@@ -31,7 +31,7 @@ if(isset($_POST['inscription'])){
         if(!password_verify($password_2, $password_1)){
             $message_erreur='Entrez des mots de passes identiques !';
             header("Refresh:4");
-            exit();
+            
         }
         else{
 
@@ -50,7 +50,7 @@ if(isset($_POST['inscription'])){
                 -Sender Name 11 Caracteres Maximum <br>
                 -Mot de passe : Minimun = 8 Caracteres , 1 Majuscule, 1 Alpha Numerique <br>';
                 header("Refresh:20");
-                exit();
+               
             }
             else{
                     //Les saisies sont au bon format
@@ -62,7 +62,7 @@ if(isset($_POST['inscription'])){
             if( $count>0){
                 $message_erreur='Adresse Mail déjà utilisée';
                 header("Refresh:4");
-                exit();
+                
             }
             else{
                 //Si l'utilisateur existe, on fait la requete d'insertion dans la BD
@@ -94,7 +94,7 @@ if(isset($_POST['inscription'])){
                     $message_succes='Inscription Réussie. <br>
                                     Connectez-Vous !';
                     header("Refresh:4");
-                    exit();
+                    
                 }
                 }
             }
@@ -104,7 +104,7 @@ if(isset($_POST['inscription'])){
     }else{
         $message_erreur='Veillez remplir tous les champs !';
         header("Refresh:4.8");
-        exit();
+        
     }
 }
 ?>

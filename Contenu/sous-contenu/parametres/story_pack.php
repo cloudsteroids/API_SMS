@@ -12,7 +12,7 @@
     <?php
         include('../../nav/nav_horizontal.php');
     ?>
-        <div class="contain">
+        <div class="containn">
                 
                 
 

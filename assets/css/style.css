@@ -192,3 +192,6 @@
             background-color: orange;
             }
 
+            .table{
+                overflow-y:scroll;
+            }
