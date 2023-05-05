@@ -1334,3 +1334,58 @@
 }
 
 
+
+
+/* Message d'erreur ou des succes  */
+
+.message_erreur{
+    position: absolute;
+    display: block;
+    z-index: 1;
+    left:40%;
+    top: 0;
+    width: 20%;
+    padding: 20px;
+    margin-top:20px ;
+    background: #db343f;
+    border-radius: 13px;
+    color:#fff;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;;
+    font-size: 20px;
+    animation-name: example;
+    animation-duration: 5s;
+}
+
+.message_succes{
+    position: absolute;
+    display: block;
+    z-index: 1;
+    left:40%;
+    top: 0;
+    width: 20%;
+    padding: 20px;
+    margin-top:20px ;
+    background: #34dba1;
+    border-radius: 13px;
+    color:#fff;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;;
+    font-size: 20px;
+    animation-name: examplee;
+    animation-duration: 5s;
+}
+@keyframes example{
+    0%  {background-color:#db343f; left:40%;; top:0px;}
+    25% {background-color:#db343f; left:40%;; top:0px;}
+    50% {background-color:#db343f; left:40%;; top:0px;}
+    75% {background-color:#db343f; left:40%;; top:0px;}
+    100%{background-color:#db343f; left:100%; top:0px;}
+}
+@keyframes examplee{
+    0%  {background-color:#34dba1; left:40%;; top:0px;}
+    25% {background-color:#34dba1; left:40%;; top:0px;}
+    50% {background-color:#34dba1; left:40%;; top:0px;}
+    75% {background-color:#34dba1; left:40%;; top:0px;}
+    100%{background-color:#34dba1; left:100%; top:0px;}
+}

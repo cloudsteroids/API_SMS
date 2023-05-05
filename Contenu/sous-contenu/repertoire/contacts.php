@@ -2,6 +2,7 @@
     <!-- Header -->
 
     <?php include('../../nav/head.php');   ?>
+    <link rel="stylesheet" href="../../../assets/css/style.css">
 
     <!-- NAV VERTICALE -->
     <?php

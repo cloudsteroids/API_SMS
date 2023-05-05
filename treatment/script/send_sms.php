@@ -26,7 +26,6 @@ if(isset($_POST['SEND_SMS'])){
     if(empty($_POST['message'])){
         $message_erreur='Saisissez un message !';
             header("Refresh:4");
-
     }
 
     //si il entre le numero et selectionne aussi un contact

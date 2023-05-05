@@ -3,6 +3,7 @@
     <!-- Header -->
 
     <?php include('../../nav/head.php');   ?>
+    <link rel="stylesheet" href="../../../assets/css/style.css">
     <title>Historique SMS</title>
     <!-- NAV VERTICALE -->
     <?php
