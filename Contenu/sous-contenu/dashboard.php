@@ -81,7 +81,7 @@ $id_user = $_SESSION['id'];
                 </div>
                 <ul class="menu">
                     <li><a href="parametres/profil.php">Profil</a></li>
-                    <li><a href="parametres/achat_pack.php">Achater Packs</a></li>
+                    <li><a href="parametres/achat_pack.php">Acheter Packs</a></li>
                     <li><a href="parametres/story_pack.php">Historique Achats</a></li>
                     <li><a href="parametres/support.php">Contactez Support</a></li> 
                 </ul>
@@ -110,7 +110,7 @@ $id_user = $_SESSION['id'];
         <div class="contain">
                 
                 
-
+ <h1>PAGE A REALISER AUJOURD'HUI</h3>
 
         </div>
     </div>    
