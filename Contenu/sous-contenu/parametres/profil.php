@@ -55,7 +55,8 @@
 
                     <form>
                     <label for="fullName" class="btn-grey text_center">&nbsp; <strong> Modifier vos informations</strong> &nbsp; </label> 
-
+                    <div class="row">
+                    <div class="col-md-6">
                         <div class="form-group"> <br>
                         <label for="username" >Nom d'utilisateur</label>
                         <input type="text" id="username" name="username" class="inputedit" required>
@@ -72,6 +73,18 @@
                         <label for="confirm-password">Confirmer le mot de passe</label>
                         <input type="password" id="confirm-password" name="confirm-password" minlength="8" required>
                         </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div>
+                            <label for="image-file">Sélectionner une image :</label>
+                            <input type="file" id="image-file" name="image" accept="image/*" onchange="previewImage(event)">
+                        </div>
+                        <div class="image-preview-container padding5"> 
+                            <img class="image-preview" id="preview" src="#" alt="Aperçu de l'image sélectionnée">
+                        </div>
+                      </div>
+                    </div>
+                    
                         <button type="submit">Enregistrer</button>
                     </form>
                </div>
@@ -140,6 +153,12 @@
 
         alert('Le profil a été mis à jour.');
         });
-    </script>   
+    </script>  
+    <script>
+      function previewImage(event) {
+        var preview = document.getElementById('preview');
+        preview.src = URL.createObjectURL(event.target.files[0]);
+      }
+    </script> 
 </body>
 </html>
