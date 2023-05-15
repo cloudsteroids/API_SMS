@@ -1,5 +1,4 @@
 
-
 <?php
 
     //Ecoute du clic du bouton connexion
@@ -30,14 +29,11 @@
                 $_SESSION['id']=  $row['id_user'];
                 
                 header("Location:sous-contenu/dashboard.php");
-
             }
             else{
                 $message_erreur='Mot de passe incorrect !';
-                            header("Refresh:4");
-                            
+                            header("Refresh:4");               
             }
-
            }
            else{
             $message_erreur='Utilisateur inexistant. <br>
@@ -45,14 +41,10 @@
             header("Refresh:4");
             
            }
-
         } 
         else{
             $message_erreur='Veillez remplir tous les champs !';
-                header("Refresh:4");
-                
+                header("Refresh:4");           
         }   
     }
-
-
 ?>

@@ -16,6 +16,9 @@ $osms = new Osms($config);
 
 $response = $osms->getTokenFromConsumerKey();
 
+
+
+
 if (empty($response['error'])) {
     session_start();
     $_SESSION['token'] = $response['access_token'];
@@ -26,11 +29,11 @@ if (empty($response['error'])) {
 
 
 
-
 $config = array(
     
     'token' => $_SESSION['token']
 );
+
 
 
 

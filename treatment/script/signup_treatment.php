@@ -26,7 +26,8 @@ if(isset($_POST['inscription'])){
         $email_user=htmlspecialchars(trim($_POST['email_user']));
         $password_1=htmlspecialchars(password_hash(trim($_POST['password_1']), PASSWORD_BCRYPT));
         $password_2=htmlspecialchars(trim($_POST['password_2']));
-        $date_inscription = date('l d m Y G:i:s');
+        setlocale(LC_TIME, 'fr_FR.utf8'); // définit la langue française
+        $date_inscription = strftime('%A %e %B %Y %H:%M:%S');
 
         if(!password_verify($password_2, $password_1)){
             $message_erreur='Entrez des mots de passes identiques !';

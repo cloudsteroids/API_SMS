@@ -1,4 +1,9 @@
- 
+ <?php
+//Appel de la fonction
+require '../../../treatment/script/osms/src/Osms.php';
+
+
+ ?>
 
     <!-- Header -->
 
@@ -11,6 +16,7 @@
     ?>
     
     <?php include('../../../treatment/script/send_sms.php');?>
+    <?php include('../../../treatment/script/program_send.php');?>
 
     <!-- NAV Horizontale -->
     <div class="nav_horizontal">
@@ -72,7 +78,7 @@
                 </div>
 
                     <span class="varchar" size="10">0/160 caractères</span>
-                    <textarea name="message" id="caracters"  placeholder="Saisissez le message"></textarea>
+                    <textarea name="message" id="caracters"  placeholder="Saisissez le message" required></textarea>
 
 
                     <div class="button">
@@ -89,9 +95,9 @@
                 <h2>Planifier Envoi</h2>
 
                 <img src="../../../assets/image/avion.jpg" alt="">
-                <form action="" method="post">
+                <form method="post">
                     <label for="date_send">Entrez la date d'envoi</label>
-                    <input type="datetime-local" id="date_send" name="date_send">
+                    <input type="datetime-local" id="date_send" name="date_send" required>
                     <div class="button">
                         <button onclick="popupRemove()"  type="button">Annuler</button>
                         <button name="Programmer"  type="submit" name="">Valider</button>
@@ -105,7 +111,3 @@
 </html>
 <script src="../../../assets/js/menu.js"></script>
 <script src="../../../assets/js/char.js"></script>
-
-
-
-
