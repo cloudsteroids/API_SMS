@@ -13,14 +13,48 @@
     <div class="nav_horizontal">
     <?php
         include('../../nav/nav_horizontal.php');
+    ?>       
+    <?php
+        //Recuperer les informations de l'uilisateur
+
+        $info_user = $connexion->query("SELECT * FROM utilisateurs WHERE id_user = '$id_user'");
+        $info = $info_user->fetch();
+        //var_dump($info);
+        $list_contact = $connexion->query("SELECT * FROM contacts ");
+        $list_contact = $list_contact->fetch();
+        //var_dump($list_contact);
     ?>
         <div class="containn">
-                
+               
                 
         <div class="box">   
                 <h2 class="text-center btn"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;<strong>Liste des contacts</strong> </h2>
                 <div class="btn-group">
-                        <button class="btn-row "><i class="fa fa-plus" aria-hidden="true"></i>&nbsp; Ajouter un contact</button>
+                        <button class="btn-row " id="myBtn"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp; Ajouter un contact</button>
+                         <!-- The Modal -->
+                            <div id="myModal" class="modal">
+                                <!-- Modal content -->
+                                <div class="modal-content" >
+                                <span class="close">&times;</span>
+                                <h2>Ajouter un contact</h2>
+                                <form method="POST" action="../../../treatment/actions/ajouter_contact.php">
+                                    <label for="id">Votre ID:</label>
+                                    <input  type="id" name="id" id="id" VALUE="<?php echo $info['id_user'] ?>" readonly >
+                                    <br><br>
+                                    <label for="nom">Nom du contact :</label>
+                                    <input  type="text" name="nom" id="nom" required >
+                                    <br><br>
+                                    <label for="prenom">prenom du contact :</label>
+                                    <input type="text" name="prenom" id="prenom" required>
+                                    <br><br>
+                                    <label for="numero">numero du contact :</label>
+                                    <input type="text" name="numero" id="numero" required>
+                                    <br><br>
+                                    <input type="submit" value="Ajouter" class="btn-row">
+                                    <br>
+                                </form>  
+                              </div>
+                             </div>
                         <button class="btn-row"><i class="fa fa-upload" aria-hidden="true"></i>&nbsp; Exporter la liste</button>
                 </div>
             <input type="text" id="myInput" onkeyup="searchTable()"  placeholder="Recherche..." class="inputsearch">
@@ -33,7 +67,6 @@
                             <th>Liste de diffusion</th>
                             <th>Date d'ajout</th>
                             <th></th>
-
                         </tr>
             </thead>
 
@@ -176,6 +209,32 @@
         </div>
     </div>  
     <script src="../../../assets/js/pagination.js"></script>
-  
+  <script>
+            // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on the button, open the modal
+        btn.onclick = function() {
+        modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+        }
+  </script>
 </body>
 </html>
