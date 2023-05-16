@@ -413,21 +413,21 @@
     border: 2px solid #a5c5fe;
 }
 
-.containn .popup form{
+.containn .popup .form{
     position: relative;
     height: 50%;
 }
 
-.containn .popup form label{
+.containn .popup .form label{
     color: #06466d;
 }
-.containn .popup form input {
+.containn .popup .form input {
     height: 50px;
     width: 230px;
     border:none;
 }
 
-.containn .popup form .button{
+.containn .popup .form .buttonn{
     margin-top: 20px;
     position: relative;
     width: 40%;
@@ -437,7 +437,7 @@
     justify-content: space-between;
 }
 
-.containn .popup form .button button{
+.containn .popup .form .buttonn .button_{
     position: relative;
     width: 30%;
     padding: 7px;
@@ -447,7 +447,7 @@
     cursor: pointer;
 }
 
-.containn .popup form .button button:hover{
+.containn .popup .form .buttonn .button_:hover{
     transition-duration: 0.5s;
     background-color: #06466d;
     color:#fff;
@@ -579,23 +579,23 @@
         border: 2px solid #a5c5fe;
     }
 
-    .containn .popup form{
+    .containn .popup .form{
         position: relative;
         height: 50%;
     }
 
-    .containn .popup form label{
+    .containn .popup .form label{
         color: #06466d;
         font-size: 8px;
     }
-    .containn .popup form input {
+    .containn .popup .form input {
         height: 40px;
         width: 120px;
         border:none;
         font-size: 8px;
     }
 
-    .containn .popup form .button{
+    .containn .popup .form .button{
         margin-top: 20px;
         position: relative;
         width: 70%;
@@ -606,7 +606,7 @@
         
     }
 
-    .containn .popup form .button button{
+    .containn .popup .form .button .button_{
         position: relative;
         width: 30%;
         padding: 7px;
@@ -617,7 +617,7 @@
         font-size: 7px;
     }
 
-    .containn .popup form .button button:hover{
+    .containn .popup .form .button .button_:hover{
         transition-duration: 0.5s;
         background-color: #06466d;
         color:#fff;
@@ -813,23 +813,23 @@
         border: 2px solid #a5c5fe;
     }
 
-    .containn .popup form{
+    .containn .popup .form{
         position: relative;
         height: 50%;
     }
 
-    .containn .popup form label{
+    .containn .popup .form label{
         color: #06466d;
         font-size: 8px;
     }
-    .containn .popup form input {
+    .containn .popup .form input {
         height: 40px;
         width: 120px;
         border:none;
         font-size: 8px;
     }
 
-    .containn .popup form .button{
+    .containn .popup .form .button{
         margin-top: 20px;
         position: relative;
         width: 70%;
@@ -840,7 +840,7 @@
         
     }
 
-    .containn .popup form .button button{
+    .containn .popup .form .button .button_{
         position: relative;
         width: 30%;
         padding: 7px;
@@ -851,7 +851,7 @@
         font-size: 7px;
     }
 
-    .containn .popup form .button button:hover{
+    .containn .popup .form .button .button_:hover{
         transition-duration: 0.5s;
         background-color: #06466d;
         color:#fff;
@@ -1047,23 +1047,23 @@
         border: 2px solid #a5c5fe;
     }
 
-    .containn .popup form{
+    .containn .popup .form{
         position: relative;
         height: 50%;
     }
 
-    .containn .popup form label{
+    .containn .popup .form label{
         color: #06466d;
         font-size: 8px;
     }
-    .containn .popup form input {
+    .containn .popup .form input {
         height: 40px;
         width: 120px;
         border:none;
         font-size: 8px;
     }
 
-    .containn .popup form .button{
+    .containn .popup .form .button{
         margin-top: 20px;
         position: relative;
         width: 70%;
@@ -1074,7 +1074,7 @@
         
     }
 
-    .containn .popup form .button button{
+    .containn .popup .form .button .button_{
         position: relative;
         width: 30%;
         padding: 7px;
@@ -1085,7 +1085,7 @@
         font-size: 7px;
     }
 
-    .containn .popup form .button button:hover{
+    .containn .popup .form .button .button_:hover{
         transition-duration: 0.5s;
         background-color: #06466d;
         color:#fff;
@@ -1204,23 +1204,23 @@
         border: 2px solid #a5c5fe;
     }
 
-    .containn .popup form{
+    .containn .popup .form{
         position: relative;
         height: 50%;
     }
 
-    .containn .popup form label{
+    .containn .popup .form label{
         color: #06466d;
         font-size: 8px;
     }
-    .containn .popup form input {
+    .containn .popup .form input {
         height: 40px;
         width: 120px;
         border:none;
         font-size: 8px;
     }
 
-    .containn .popup form .button{
+    .containn .popup .form .button{
         margin-top: 20px;
         position: relative;
         width: 70%;
@@ -1231,7 +1231,7 @@
         
     }
 
-    .containn .popup form .button button{
+    .containn .popup .form .button .button_{
         position: relative;
         width: 30%;
         padding: 7px;
@@ -1242,7 +1242,7 @@
         font-size: 7px;
     }
 
-    .containn .popup form .button button:hover{
+    .containn .popup .form .button .button_:hover{
         transition-duration: 0.5s;
         background-color: #06466d;
         color:#fff;
@@ -1370,7 +1370,7 @@
     margin-top:20px ;
     background: #88ffd1;
     border-radius: 13px;
-    color:#fff;
+    color:#000000;
     text-align: center;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;;
     font-size: 20px;

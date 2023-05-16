@@ -1,8 +1,8 @@
  <?php
 //Appel de la fonction
-require '../../../treatment/script/osms/src/Osms.php';
 
 
+$Envoie = '';
  ?>
 
     <!-- Header -->
@@ -86,24 +86,27 @@ require '../../../treatment/script/osms/src/Osms.php';
                         <button onclick="popupEcho()" type="button">Programmer</button>
                     </div>
 
+
+                    <!-- POPUP -->
+                    <div id="popup" class="popup">
+                        <h2>Planifier Envoi</h2>
+
+                        <img src="../../../assets/image/avion.jpg" alt="">
+                        <div class="form">
+                            <label for="date_send">Entrez la date d'envoi</label>
+                            <input type="datetime-local" id="date_send" name="date_send">
+                            <div class="buttonn">
+                                <button class="button_" onclick="popupRemove()"  type="button">Annuler</button>
+                                <button class="button_" name="Programmer"  type="submit" name="">Valider</button>
+                            </div>
+                        </div>
+                    </div>
+
                 </form>
 
             </div>
             
-            <!-- POPUP -->
-            <div id="popup" class="popup">
-                <h2>Planifier Envoi</h2>
-
-                <img src="../../../assets/image/avion.jpg" alt="">
-                <form method="post">
-                    <label for="date_send">Entrez la date d'envoi</label>
-                    <input type="datetime-local" id="date_send" name="date_send" required>
-                    <div class="button">
-                        <button onclick="popupRemove()"  type="button">Annuler</button>
-                        <button name="Programmer"  type="submit" name="">Valider</button>
-                    </div>
-                </form>
-            </div>
+            
                
         </div>
     </div>    

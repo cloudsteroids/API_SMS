@@ -96,19 +96,17 @@ class Osms
      * @param  string  $message          The content of the SMS, must not exceed
      *                                   160 characters         
      * @param  string  $senderName       The sender name
-     *C'.' '.'Steroids
+     *
      * @return array
      */
     public function sendSms(
         $senderAddress,
         $receiverAddress,
         $message,
-        $senderName = ''
+        $senderName = 'C Steroids'
     ) {
         $url = self::BASE_URL . '/smsmessaging/v1/outbound/' . urlencode($senderAddress)
             . '/requests';
-
-            
 
         $headers = array(
             'Authorization: Bearer ' . $this->getToken(),
@@ -117,17 +115,15 @@ class Osms
 
         if (!empty($senderName)) {
             $args = array(
-                'outboundSMSMe
-                ssageRequest' => array(
+                'outboundSMSMessageRequest' => array(
                     'address'                   => $receiverAddress,
                     'senderAddress'             => $senderAddress,
                     'senderName'                => urldecode($senderName),
                     'outboundSMSTextMessage'    => array(
-                        'message' => urlencode($message)
+                        'message' => $message
                     )
                 )
             );
-
         } else {
             $args = array(
                 'outboundSMSMessageRequest' => array(
