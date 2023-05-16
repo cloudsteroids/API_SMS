@@ -1,4 +1,9 @@
 <?php
+
+//Appel de la fonction
+require 'osms/src/Osms.php';
+
+
 use \Osms\Osms;
 
 
@@ -10,7 +15,7 @@ if(isset($_POST['SEND_SMS'])){
     //Initialisation
     $Send_number = htmlspecialchars(str_replace(' ','',$_POST['send_number']));
     $Message = htmlspecialchars(trim($_POST['message']));
-    $Sender_name ='';
+
 
     //Compte le nombre de messages 
     function Compter_Message($Message){
@@ -128,9 +133,7 @@ if(isset($_POST['SEND_SMS'])){
                             // receiver
                             'tel:'.$Send_number,
                             // message
-                            $Message,
-                            $Sender_name
-                            
+                            $Message
                         );
 
                         if (empty($response['error'])) {
@@ -144,13 +147,11 @@ if(isset($_POST['SEND_SMS'])){
                             
                             
                             
-                            $insert_SMS = $connexion->query("INSERT INTO `messages` (id_message, contenu_message,
-                                                            destinataire, date_envoi, statut) VALUES('$Id_message', '$Message', '$Send_number', '$Date_Envoi','$Statut')");
+                            $insert_SMS = $connexion->query("INSERT INTO `messages` (id_message,id_user, contenu_message,
+                                                            destinataire, date_envoi, statut) VALUES('$Id_message','$id_user','$Message', '$Send_number', '$Date_Envoi','$Statut')");
+                            
                             // facturation de l'sms
-                            
-
-                                
-                            
+ 
                                 $SMS_RESTANTS = $Nmbre_sms_user-$Nombre_message;
 
                                 $req = $connexion->query("UPDATE `comptes` SET nombre_sms = '$SMS_RESTANTS' WHERE id_user = '$id_user'");
@@ -175,6 +176,8 @@ if(isset($_POST['SEND_SMS'])){
         }
         else{
             //Si il a selectionné une liste de contacts
+
+            
         }
 
     }
