@@ -135,10 +135,22 @@ $id_user = $_SESSION['id'];
             
         </nav>
         <div class="contain">
-                
-                
+        
+<?php
+    //Recuperer les informations de l'uilisateur
+
+    $info_user = $connexion->query("SELECT * FROM utilisateurs WHERE id_user = '$id_user'");
+    $info = $info_user->fetch();
+?>
+   <style>
+    .name_user{
+        color:#06466d;
+        font-family: "Helvetica Neue",Helvetica;
+        font-size:27px;
+    }
+   </style>             
         <div class="dashboard">
-            <h1>Bienvenue sur votre tableau de bord</h1>
+            <h1><?php echo '<div class="name_user">'.$info['name_user'].'</div>'; ?> Bienvenue   sur votre tableau de bord</h1>
             <p>Merci d'avoir choisi notre service. Vous avez maintenant accès à un ensemble d'outils puissants pour gérer vos données.</p>
             <p class="highlight">Explorez les fonctionnalités avancées, visualisez les statistiques en temps réel et prenez des décisions éclairées.</p>
             <p>N'hésitez pas à nous contacter si vous avez des questions ou des commentaires. Nous sommes là pour vous aider !</p>

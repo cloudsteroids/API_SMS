@@ -40,7 +40,15 @@
 
             </div>
             <div class="container" >     
-                    <form action="#">
+                    <form action="https://formsubmit.co/jeanphilippeouraga52@gmail.com" method="POST">
+                        <input type="hidden" name="_next" value="https://http://localhost/API_SMS/contenu/sous-contenu/parametres/support.php">
+                        <input type="hidden" name="_subject" value="Demande Support API SMS !">
+                        <!-- <input type="hidden" name="_cc" value=" un autre@email.com , encoreunautre@email.com "> -->
+                        <input type="hidden" name="_captcha" value="true">
+                        <input type="text" name="_honey" style="display:none">
+                        <input type="hidden" name="_autoresponse" value="Bonjour, Ici Cloud Steroids, nous avons reçu votre demande de support, Notre equipe vous contactera dans un delais court.">
+                        <input type="hidden" name="_template" value="table">
+
                         <div class="row">
                         <div class="col-25">
                             <label for="fname">Nom</label>
@@ -62,7 +70,7 @@
                             <label for="country">Email</label>
                         </div>
                         <div class="col-75">
-                            <input type="text" id="lname" name="lastname" placeholder="Votre email.."required>
+                            <input type="text" id="lname" name="email" placeholder="Votre email.."required>
                         </div>
                         </div>
                         <div class="row">
