@@ -33,6 +33,33 @@ $id_user = $_SESSION['id'];
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
     <script src="../../assets/js/menu.js"></script>
     <title>Home</title>
+    <style>
+        .dashboard {
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 40px;
+      margin: 50px auto;
+      max-width: 600px;
+    }
+    
+    h1 {
+      font-size: 24px;
+      color: #333;
+      margin-top: 0;
+    }
+    
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+      color: #555;
+    }
+    
+    .highlight {
+      color: #ff9900;
+      font-weight: bold;
+    }
+    </style>
 </head>
 <body>
     <!-- NAV VERTICALE -->
@@ -110,7 +137,12 @@ $id_user = $_SESSION['id'];
         <div class="contain">
                 
                 
-
+        <div class="dashboard">
+            <h1>Bienvenue sur votre tableau de bord</h1>
+            <p>Merci d'avoir choisi notre service. Vous avez maintenant accès à un ensemble d'outils puissants pour gérer vos données.</p>
+            <p class="highlight">Explorez les fonctionnalités avancées, visualisez les statistiques en temps réel et prenez des décisions éclairées.</p>
+            <p>N'hésitez pas à nous contacter si vous avez des questions ou des commentaires. Nous sommes là pour vous aider !</p>
+        </div>
 
         </div>
     </div>    
