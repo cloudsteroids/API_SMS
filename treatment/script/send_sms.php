@@ -69,8 +69,12 @@ if(isset($_POST['SEND_SMS'])){
         $message_erreur='Entrer un destinataire';
         header("Refresh:4");
     }
-    elseif(isset($_POST['list_send']) && empty($_POST['message'])){
+    elseif($_POST['list_send']){
         $message_erreur='Saissisez un message';
+        header("Refresh:4");
+    }
+    elseif(strlen($Send_number)!==14){
+        $message_erreur='Entrez un numero à 10 chiffres';
         header("Refresh:4");
     }
     
@@ -156,7 +160,6 @@ if(isset($_POST['SEND_SMS'])){
 
                                 $req = $connexion->query("UPDATE `comptes` SET nombre_sms = '$SMS_RESTANTS' WHERE id_user = '$id_user'");
 
-                                //
 
                                 //Si message envoyé
                                 $message_succes='Sms envoyé !';
@@ -165,6 +168,7 @@ if(isset($_POST['SEND_SMS'])){
                                 
                         } else {
                         $message_erreur='Echec de l\'envoi !';
+                        header("Refresh:4");
 
                         }
                     }

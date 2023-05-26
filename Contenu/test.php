@@ -1,5 +1,12 @@
-<?php
 
+
+curl -X GET https://formsubmit.co/api/get-apikey/philippeouraga52@gmail.com
+
+onclick = "return confirm('Voulez-vous supprimer cette liste ?')"
+../../../treatment/actions/ajouter_contact.php
+
+<?php
+/*
     include('../treatment/actions/connexion.php');
 
     session_start();
@@ -13,9 +20,8 @@
 ?>
 
 
-
 <?php
-/*
+
 
 $email_user = '';
 

@@ -6,7 +6,7 @@
     include('../treatment/script/signup_treatment.php');
 ?>
 
-<?php
+<?
 $message_erreur='';
 
 $message_succes='';

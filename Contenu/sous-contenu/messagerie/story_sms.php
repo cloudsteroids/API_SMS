@@ -1,6 +1,4 @@
-
-
-    <!-- Header -->
+ <!-- Header -->
 
     <?php include('../../nav/head.php');   ?>
     <link rel="stylesheet" href="../../../assets/css/style.css">
@@ -15,21 +13,35 @@
     <?php
         include('../../nav/nav_horizontal.php');
     ?>
+
+    <?php
+    //INCLURE LA CONNEXION A LA BASE DE DONNEES
+    include('../../../treatment/actions/connexion.php');
+    ?>
+
+
+    <?php
+    //Recuperation de tous les sms dans l'historique
+    $recup_sms = $connexion->query("SELECT * FROM messages WHERE id_user = '$id_user'");
+    ?>
+    
         <div class="containn">
             <div class="box">   
                 <h2 class="text-center btn"><i class="fa fa-history" aria-hidden="true"></i>&nbsp;<strong>Historique des SMS</strong> </h2>
                 <button id="myBtn" class="btn-delete button"><i class="fa fa-trash" aria-hidden="true"></i>&nbsp; Supprimer historique</button>
-                <div id="myModal" class="modal">
-                    <!-- Modal content -->
+                
+                    <div id="myModal" class="modal">
+                    <!-- Modal content --> 
                     <div class="modal-content">
                         <span class="close">&times;</span>
                         <p>Êtes vous sûre de vouloir supprimer l'historique des sms envoyés ?</p>
                         <div id="pagination">
-                                <button  class="btn-pagination button">OUI</button>
-                                <button  class="btn-pagination button">NON</button>
+                                <button  class="btn-pagination button"><a  href="../../../treatment/actions/delete_all_sms.php?id_user=<?php echo $id_user?>">OUI</a></button>
+                                <button  class="btn-pagination button"><a href="">NON</a></button>
                         </div>
 
                     </div>
+                    
                 </div>
             <input type="text" id="myInput" onkeyup="searchTable()"  placeholder="Recherche..." class="inputsearch">
             <div class="padding5"></div>
@@ -46,87 +58,20 @@
             </thead>
 
             <tbody>
-                        <tr>
-                            <td>26/02/2023 12:15:03:01</td>
-                            <td>Groupe2</td>
-                            <td>Nous vous souhaitons la bienvenue à Cloud Steroids...</td>
-                            <td>Envoyé</td>
-                            <td><button class="btn-green button"><i class="fa fa-eye" aria-hidden="true"></i>&nbsp; voir</button></td>
 
-                        </tr>
-                        <tr>
-                        <td>26/02/2023 12:15:03:01</td>
-                            <td>Groupe2</td>
-                            <td>Nous vous souhaitons la bienvenue à Cloud Steroids...</td>
-                            <td>Envoyé</td>
-                            <td><button class="btn-green button"><i class="fa fa-eye" aria-hidden="true"></i>&nbsp; voir</button></td>
-
-                        </tr>
-                        <td>26/02/2023 12:15:03:01</td>
-                            <td>Groupe2</td>
-                            <td>Nous vous souhaitons la bienvenue à Cloud Steroids...</td>
-                            <td>Envoyé</td>
-                            <td><button class="btn-green button"><i class="fa fa-eye" aria-hidden="true"></i>&nbsp; voir</button></td>
-
-                        </tr>
-                        <td>26/02/2023 12:15:03:01</td>
-                            <td>Groupe2</td>
-                            <td>Nous vous souhaitons la bienvenue à Cloud Steroids...</td>
-                            <td>Envoyé</td>
-                            <td><button class="btn-green button"><i class="fa fa-eye" aria-hidden="true"></i>&nbsp; voir</button></td>
-
-                        </tr>
-                        <td>26/02/2023 12:15:03:01</td>
-                            <td>Groupe2</td>
-                            <td>Nous vous souhaitons la bienvenue à Cloud Steroids...</td>
-                            <td>Envoyé</td>
-                            <td><button class="btn-green button"><i class="fa fa-eye" aria-hidden="true"></i>&nbsp; voir</button></td>
-
-                        </tr>
-                        <td>26/02/2023 12:15:03:01</td>
-                            <td>Groupe2</td>
-                            <td>Nous vous souhaitons la bienvenue à Cloud Steroids...</td>
-                            <td>Envoyé</td>
-                            <td><button class="btn-green button"><i class="fa fa-eye" aria-hidden="true"></i>&nbsp; voir</button></td>
-
-                        </tr>
-                        <td>26/02/2023 12:15:03:01</td>
-                            <td>Groupe2</td>
-                            <td>Nous vous souhaitons la bienvenue à Cloud Steroids...</td>
-                            <td>Envoyé</td>
-                            <td><button class="btn-green button"><i class="fa fa-eye" aria-hidden="true"></i>&nbsp; voir</button></td>
-
-                        </tr>
-                       
-                        <td>26/02/2023 12:15:03:01</td>
-                            <td>Groupe2</td>
-                            <td>Nous vous souhaitons la bienvenue à Cloud Steroids...</td>
-                            <td>Envoyé</td>
-                            <td><button class="btn-green button"><i class="fa fa-eye" aria-hidden="true"></i>&nbsp; voir</button></td>
-
-                        </tr>
-                        <td>24/02/2023 12:15:03:01</td>
-                            <td>Groupe2</td>
-                            <td>Nous vous souhaitons la bienvenue à Cloud Steroids...</td>
-                            <td>Envoyé</td>
-                            <td><button class="btn-green button"><i class="fa fa-eye" aria-hidden="true"></i>&nbsp; voir</button></td>
-
-                        </tr>
-                        <td>24/02/2023 12:15:03:01</td>
-                            <td>Groupe3</td>
-                            <td>Nous vous souhaitons la bienvenue à Cloud Steroids...</td>
-                            <td>Retard</td>
-                            <td><button class="btn-green button"><i class="fa fa-eye" aria-hidden="true"></i>&nbsp; voir</button></td>
-
-                        </tr>
-                        <td>26/02/2023 12:15:03:01</td>
-                            <td>Groupe2</td>
-                            <td>Nous vous souhaitons la bienvenue à Cloud Steroids...</td>
-                            <td>Envoyé</td>
-                            <td><button class="btn-green button"><i class="fa fa-eye" aria-hidden="true"></i>&nbsp; voir</button></td>
-
-                        </tr>
-                        
+            <?php
+                while( $story = $recup_sms->fetch())
+                {?>
+                <tr>    
+                    <td><?php echo $story['date_envoi'] ;?></td>
+                    <td><?php echo $story['destinataire'] ;?></td>
+                    <td><?php echo $story['contenu_message'] ;?></td>
+                    <td><?php echo $story['statut'] ;?></td>
+                    <td><button class="btn-green button"><a onclick = "return confirm('Voulez-vous supprimer ce message ?')" href="../../../treatment/actions/delete_all_sms.php?id=<?php echo $id_user;?>&id_sms=<?php echo $story['id_message'];?>">supprimer</a></button></td>
+                </tr>
+             <?php  
+              }
+              ?>        
              </tbody>
 
 

@@ -41,7 +41,7 @@
             </div>
             <div class="container" >     
                     <form action="https://formsubmit.co/jeanphilippeouraga52@gmail.com" method="POST">
-                        <input type="hidden" name="_next" value="https://http://localhost/API_SMS/contenu/sous-contenu/parametres/support.php">
+                       <!-- <input type="hidden" name="_next" value="\localhost/API_SMS/contenu/sous-contenu/parametres/support.php">-->
                         <input type="hidden" name="_subject" value="Demande Support API SMS !">
                         <!-- <input type="hidden" name="_cc" value=" un autre@email.com , encoreunautre@email.com "> -->
                         <input type="hidden" name="_captcha" value="true">
@@ -82,7 +82,7 @@
                         </div>
                         </div>
                         <div class="row">
-                        <input type="submit" value="Valider">
+                        <input type="submit" value="Soumettre">
                         </div>
             </form>
   

@@ -1,13 +1,10 @@
     <!-- Requete pour afficher nombre SMS -->
     <?php
-
     $Glob_req = $connexion->query("SELECT * FROM comptes WHERE id_user = '$id_user'");
 
     $results= $Glob_req->fetch();
-    
     ?>
     
-
 <nav class="navbar">
             <div class="session">
                     <a href=""><img class="img_profile" src="../../../assets/image/profile_vide.jpg" alt=""></a>

@@ -161,7 +161,7 @@ class Osms
     /**
      * Displays how many SMS you can still send.
      *
-     * @param  string  $country  The country to filter on (the international 3 digits 
+            * @param  string  $country  The country to filter on (the international 3 digits 
      *                           country)
      *
      * @return array

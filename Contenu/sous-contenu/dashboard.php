@@ -49,7 +49,7 @@ $id_user = $_SESSION['id'];
       margin-top: 0;
     }
     
-    p {
+    .pp {
       font-size: 16px;
       line-height: 1.5;
       color: #555;
@@ -151,9 +151,9 @@ $id_user = $_SESSION['id'];
    </style>             
         <div class="dashboard">
             <h1><?php echo '<div class="name_user">'.$info['name_user'].'</div>'; ?> Bienvenue   sur votre tableau de bord</h1>
-            <p>Merci d'avoir choisi notre service. Vous avez maintenant accès à un ensemble d'outils puissants pour gérer vos données.</p>
+            <p clas="pp">Merci d'avoir choisi notre service. Vous avez maintenant accès à un ensemble d'outils puissants pour gérer vos données.</p>
             <p class="highlight">Explorez les fonctionnalités avancées, visualisez les statistiques en temps réel et prenez des décisions éclairées.</p>
-            <p>N'hésitez pas à nous contacter si vous avez des questions ou des commentaires. Nous sommes là pour vous aider !</p>
+            <p class="pp">N'hésitez pas à nous contacter si vous avez des questions ou des commentaires. Nous sommes là pour vous aider !</p>
         </div>
 
         </div>

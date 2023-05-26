@@ -1,5 +1,0 @@
-@echo off
-:loop
-php -f "C:\wamp64\www\API_SMS\treatment\script\const_send.php" >nul
-timeout /t 60 /nobreak >nul
-goto loop
