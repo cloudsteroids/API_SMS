@@ -3,6 +3,7 @@
 
     <?php include('../../nav/head.php');   ?>
     <link rel="stylesheet" href="../../../assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <!-- NAV VERTICALE -->
     <?php include('../../nav/nav_vertical.php');?>
@@ -20,7 +21,26 @@
 $message_erreur='';
 
 $message_succes='';
+
+
+
 ?>
+
+
+    <!-- AFFICHAGE DES MESSAGES D'ERREUR LORS DE LA MISE A JOUR DES CONATCTS -->
+
+    <?php 
+        if(isset($_SESSION['message_erreur'])){?>  
+        <div class="message_erreur"><?php echo($_SESSION['message_erreur']);?></div>
+        <?php
+        }
+    ?>
+     <?php 
+        if(isset($_SESSION['message_success'])){?>  
+        <div class="message_succes"><?php echo($_SESSION['message_success']);?></div>
+        <?php
+        }
+    ?>
 
      <!-- Affichage des messages -->
      <?php 
@@ -62,17 +82,17 @@ $message_succes='';
                                 <span class="close">&times;</span>
                                 <h2>Ajouter un contact</h2>
                                 <form method="POST" action="">
-                                    <label for="id">Votre ID:</label>
+                                    <!--<label for="id">Votre ID:</label>-->
                                     <input  type="id" name="id" id="id" VALUE="<?php echo $info['id_user'] ?>" readonly >
                                     <br><br>
-                                    <label for="nom">Nom du contact :</label>
-                                    <input  type="text" name="nom" id="nom" required >
+                                    <!--<label for="nom">Nom du contact :</label>-->
+                                    <input  type="text" name="nom" id="nom" placeholder="Entrez le nom" required >
                                     <br><br>
-                                    <label for="prenom">prenom du contact :</label>
-                                    <input type="text" name="prenom" id="prenom" required>
+                                    <!--<label for="prenom">prenom du contact :</label>-->
+                                    <input type="text" name="prenom" id="prenom" placeholder="Entrez le prénom" required>
                                     <br><br>
-                                    <label for="numero">numero du contact :</label>
-                                    <input type="text" name="numero" id="numero" required>
+                                    <!--<label for="numero">numero du contact :</label>-->
+                                    <input type="text" name="numero" id="numero" placeholder="Entrez le numéro" required>
                                     <br><br>
                                     <input type="submit" name="Ajouter" value="Ajouter" class="btn-row">
                                     <br>
@@ -127,28 +147,29 @@ $message_succes='';
                                 <div class="moda-content" >
                                 <span class="closee">&times;</span>
                                 <h2>Modifier Contact</h2>
-                                <form method="POST" action="">
-                                    <label for="id">Votre ID:</label>
+                                <form method="POST" action="../../../treatment/actions/modifier_contact.php?contact=<?php echo $list_c['numero_contact']?>&id_contact=<?php echo $list_c['id_contact']?>">
+                                    <!-- <label for="id">Votre ID:</label>-->
                                     <input  type="id" name="id" id="id" VALUE="<?php echo $info['id_user'] ?>" readonly >
                                     <br><br>
-                                    <label for="nom">Nom :</label>
-                                    <input  type="text" value="<?php echo $list_c['nom_contact']?>" name="nom_contact" id="nom" required >
+                                    <!--<label for="nom">Nom :</label>-->
+                                    <input  type="text" value="<?php echo $list_c['nom_contact']?>" name="nom_contact" id="nom_contact" required >
+<br><br>
+                                    <!--<label for="prenom">Prénom :</label>-->
+                                    <input type="text" value="<?php echo $list_c['prenom_contact']?>"  name="prenom_contact" id="prenom_contact" required>
                                     <br><br>
-                                    <label for="prenom">Prénom :</label>
-                                    <input type="text" value="<?php echo $list_c['prenom_contact']?>"  name="prenom_contact" id="prenom" required>
+                                    <!--<label for="numero">Numéro :</label>-->
+                                        <input type="text"value="<?php echo $list_c['numero_contact']?>"  name="numero_contact" id="numero_contact_new" required>
                                     <br><br>
-                                    <label for="numero">Numéro :</label>
-                                    <input type="text"value="<?php echo $list_c['numero_contact']?>"  name="numero_contact" id="numero" required>
-                                    <br><br>
-                                    <input type="submit" name="Modifier" value="Modifier" class="btn-row">
+                                    <button type="submit">Modifier</button>
                                     <br>
                                 </form>  
                               </div>
-                             </div>
+                            </div>
 
 
                     <script>
                     <?php foreach ($list as $list_c) { ?>
+
                         // Get the modal
                         var modal_<?php echo $list_c['id_contact'];?> = document.getElementById("popup_<?php echo $list_c['id_contact'];?>");
 

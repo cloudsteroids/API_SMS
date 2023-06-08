@@ -1,13 +1,8 @@
- <?php
-//Appel de la fonction
-
-
-$Envoie = '';
- ?>
 
     <!-- Header -->
 
     <?php include('../../nav/head.php');?>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     
     <title>envoyer SMS</title>
     <!-- NAV VERTICALE -->
@@ -24,17 +19,15 @@ $Envoie = '';
     <?php
         include('../../nav/nav_horizontal.php');
     ?> 
+
     <?
-    
     $message_erreur='';
 
     $message_succes='';
 
-    ?>
+    ?>    
     
-
-
-
+    
          <!-- Affichage des messages -->
          <?php 
             if(isset($message_erreur)){?>  
@@ -49,30 +42,34 @@ $Envoie = '';
             }
         ?>
         
-        
-        
-    
         <div class="containn">
 
        
 
             <div class="form_sms">
-
-                <form method="POST" id="ecoute">
-
-
+<?php
+   $SelectGroupe = $connexion->query("SELECT * FROM groupe_contact WHERE id_user = '$id_user'");
+?>
+                <form method="POST" action="" id="ecoute">
                 <div class="option_send">
 
-                <input class="" type="radio" id="hide" onclick="hideShowDiv(1)" name="lang" id="">
-                <label for="hide">SMS vers contact</label> 
+                <input class="" type="radio" id="hide" onclick="hideShowDiv(1)" name="lang" checked>
+                <label for="hide">SMS vers contact</label>  
 
-                <input class="" type="radio" id="show" onclick="hideShowDiv(2)" name="lang" id="">
+                <input class="" type="radio" id="show" onclick="hideShowDiv(2)" name="lang">
                 <label for="show">SMS vers liste</label>
 
                 <input id="champ" type="text" name="send_number" placeholder="Entrez un Numero 10 chiffres Ex: +2250565282962"></input>
 
                 <select id="deroulant" name="list_send" class="form-select">
-                    <option value="">Selectionner un liste</option>
+                <option value="">Selectionner un liste</option>
+                    <?php
+                        while($row = $SelectGroupe->fetch()){?>
+                            <option value="<?php echo $row['id_groupe'];?>"><?php echo $row['nom_groupe'];?></option>
+                    <?php            
+                        }
+                    ?>
+                    
                 </select>
 
                 </div>
@@ -104,13 +101,22 @@ $Envoie = '';
 
                 </form>
 
-            </div>
-            
-            
-               
+            </div>  
         </div>
     </div>    
 </body>
 </html>
 <script src="../../../assets/js/menu.js"></script>
 <script src="../../../assets/js/char.js"></script>
+
+<script>
+        $(document).ready(function(){
+        $('#deroulant').on('change', function(){
+            var deroulant = $(this).val();
+            if(deroulant){
+                $('#ecoute').attr('action', '../../../treatment/script/send_sms.php?id_gr=' + deroulant);
+                }
+            });
+        });
+
+    </script>

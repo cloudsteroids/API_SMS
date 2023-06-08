@@ -62,7 +62,7 @@
         <div class="row gy-5" data-aos="fade-in">
             <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start">
             <h2>Bienvenue<span></span></h2>
-            <p>
+            <p style="text-align: justify;">
                <span>CS'Texto</span> est une application innovante qui vous permet de créer et d'envoyer des SMS de masse avec une rapidité inégalées.
                 Vous voulez envoyer des SMS à des centaines de personnes partout en Côte D'Ivoire, en un clic, vous êtes au bon endroit.
 
@@ -84,14 +84,14 @@
 
             <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
                 <div class="icon-box">
-                <div class="icon"><i class="bi bi-balloon-heart"></i></div>
+                <div class="icon"><i class="bi bi-patch-check"></i></div>
                 <h4 class="title"><a href="#" class="stretched-link">Simple</a></h4>
                 </div>
             </div><!--End Icon Box -->
 
             <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
                 <div class="icon-box">
-                <div class="icon"><i class="bi bi-gem"></i></div>
+                <div class="icon"><i class="bi bi-lightning-charge"></i></div>
                 <h4 class="title"><a href="#" class="stretched-link">Rapide</a></h4>
                 </div>
             </div><!--End Icon Box -->
@@ -127,8 +127,8 @@
                 <div class="section-header">
                     <h2>À qui s’adresse notre solution SMS ?</h2>
                     <p>
-                        Notre solution SMS est idéale pour ameliorer la rélation avec vos clients ainsi que votre equipe. C'est un moyen de communication
-                        simple, flexible et réactif qui vous permet de dévélopper vos ventes, fideliser vos clients, les informer en temps réels.
+                        Notre solution SMS est pour creer de l'interaction entre vous et votre clientèle ainsi que votre equipe. C'est un moyen de communication
+                        simple, flexible et réactif qui vous permet de d'agrandir vos ventes, fideliser vos clients en restant en contact avec eux.
                     </p>
                 </div>
 
@@ -176,7 +176,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="service-item position-relative">
                         <div class="icon">
-                            <i class="bi bi-hospital"></i>
+                            <i class="bi bi-heart-pulse"></i>
                         </div>
                         <h3>Aux professionnels de santé</h3>
                         <p>Envoyer des rappels de rendez-vous, 
@@ -218,7 +218,7 @@
 
                 <div class="section-header">
                 <h2>Comment s'y prendre?</h2>
-                <p>Simple et rapide, juste importe tes contacts et ta configuration est faite.</p>
+                <p>Observez en 4 étape comment utiliser notre application</p>
                 </div>
 
                 <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
@@ -312,7 +312,7 @@
 
                 <div class="col-lg-4">
                     <div class="pricing-item">
-                    <h3>Small</h3>
+                    <h3>Basique</h3>
                     <div class="icon">
                         <i class="bi bi-emoji-laughing"></i>
                     </div>
@@ -322,7 +322,7 @@
                         <li><i class="bi bi-check"></i> Support 7/24</li>
                         <li><i class="bi bi-check"></i> Forfait Illimité</li>
                     </ul>
-                    <div class="text-center"><a href="#" class="buy-btn">Achéter</a></div>
+                    <div class="text-center"><a href="#" class="buy-btn">Acheter</a></div>
                     </div>
                 </div><!-- End Pricing Item -->
 
@@ -339,13 +339,13 @@
                         <li><i class="bi bi-check"></i> Support 7/24</li>
                         <li><i class="bi bi-check"></i>Forfait Illimité</li>
                     </ul>
-                    <div class="text-center"><a href="#" class="buy-btn">Achéter</a></div>
+                    <div class="text-center"><a href="#" class="buy-btn">Acheter</a></div>
                     </div>
                 </div><!-- End Pricing Item -->
 
                 <div class="col-lg-4">
                     <div class="pricing-item">
-                    <h3>mini</h3>
+                    <h3>Standard</h3>
                     <div class="icon">
                         <i class="bi bi-emoji-smile"></i>
                     </div>
@@ -355,7 +355,7 @@
                         <li><i class="bi bi-check"></i> Support 7/24</li>
                         <li><i class="bi bi-check"></i> Forfait Illimité</li>
                     </ul>
-                    <div class="text-center"><a href="#" class="buy-btn">Achéter </a></div>
+                    <div class="text-center"><a href="#" class="buy-btn">Acheter </a></div>
                     </div>
                 </div><!-- End Pricing Item -->
 
@@ -390,7 +390,7 @@
                         <i class="bi bi-envelope flex-shrink-0"></i>
                         <div>
                         <h4>Email:</h4>
-                        <p>c-mahideo@cloudsteroids.com</p>
+                        <p>sales@cloudsteroids.com</p>
                         </div>
                     </div><!-- End Info Item -->
 
@@ -398,7 +398,7 @@
                         <i class="bi bi-phone flex-shrink-0"></i>
                         <div>
                         <h4>Contact:</h4>
-                        <p>+225 587615933</p>
+                        <p>+225 0595064012</p>
                         </div>
                     </div><!-- End Info Item -->
 
@@ -455,7 +455,7 @@
           </a>
           <p>Suivez-nous partout</p>
           <div class="social-links d-flex mt-4">
-            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="https://twitter.com/cloud_steroids" class="twitter"><i class="bi bi-twitter"></i></a>
             <a href="https://www.facebook.com/CloudSteroids2020" class="facebook"><i class="bi bi-facebook"></i></a>
             <a href="https://www.linkedin.com/company/cloudsteroids/" class="linkedin"><i class="bi bi-linkedin"></i></a>
           </div>
@@ -489,7 +489,7 @@
             rue 202<br>
             Abidjan, Cocody<br>
             Faya <br><br>
-            <strong>Phone:</strong> +225 2722246838<br>
+            <strong>Phone:</strong> +225 0595064012<br>
             <strong>Email:</strong> sales@cloudsteroids.com<br>
           </p>
 

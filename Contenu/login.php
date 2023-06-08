@@ -27,7 +27,7 @@ $message_succes='';
     <title>Connexion</title>
 </head>
 
-<body style="background-color:#1072AE;">
+<body style="background-color:#fff;" >
         <?php 
 
         //Affichage du message en cas d'erreur  
@@ -40,7 +40,7 @@ $message_succes='';
 
         <!-- Issertion image  -->
         <div class="image1">
-            <img src="../assets/image/sms-img21.png" alt="">
+            <img src="../assets/image/hom.jpg" alt="">
         </div>
         
 

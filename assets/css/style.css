@@ -343,7 +343,7 @@
             }
             
             .labeltab:hover {
-                background: firebrick;
+                background: rgb(34, 123, 178);
                 color: white
             }
             
@@ -355,7 +355,7 @@
                 top: 40px; 
                 
                 padding: 20px;
-                border: 1px groove firebrick;
+                border: 1px groove rgb(34, 123, 178);
                 border-radius: 0 0 8px 8px;
                 background: rgb(232, 232, 241);
                 
@@ -381,7 +381,7 @@
             
             .tabby-tab [type=radio] { display: none; }
             [type=radio]:checked ~ label {
-                background: firebrick;
+                background: rgb(34, 123, 178);
                 color: white;
                 z-index: 2;
             }

@@ -1,10 +1,32 @@
 <?php
 
+    $host_name= 'localhost';
+    $dbname = 'api_sms';
+    $username = 'root';
+    $mdp = '';
+    try
+    {
+        $connexion = new PDO("mysql:host=$host_name;dbname=$dbname","$username",$mdp);
+       
+    }
+    //Sinon on affiche un message d'erreur 
+    catch(Exception $e)
+    {
+        die('Erreur : '.$e->getMessage());
+    }
+?>
+
+
+<?php
+
 //Appel de la fonction
 require 'osms/src/Osms.php';
 
 
+
 use \Osms\Osms;
+
+
 
 
 //Script pour l'envoi et l'insertion des SMS dans la base de données
@@ -54,7 +76,7 @@ if(isset($_POST['SEND_SMS'])){
             header("Refresh:4");
     }
 
-    //si il entre le numero et selectionne aussi un contact
+    //si il entre le numero et selectionne aussi une liste de contact
     elseif(!empty($_POST['send_number']) && !empty($_POST['list_send']) && !empty($_POST['message']) ){
         $message_erreur='Impossible d\'envoyer un SMS à une liste et un contact sumultanément !';
             header("Refresh:4");
@@ -69,11 +91,11 @@ if(isset($_POST['SEND_SMS'])){
         $message_erreur='Entrer un destinataire';
         header("Refresh:4");
     }
-    elseif($_POST['list_send']){
+    /*elseif($_POST['list_send']){ ../../../treatment/script/send_sms.php?id_groupe = <?php echo $_SESSION['id_groupe']; ?>
         $message_erreur='Saissisez un message';
         header("Refresh:4");
-    }
-    elseif(strlen($Send_number)!==14){
+    }*/
+    elseif(!empty($_POST['send_number']) && strlen($Send_number)!==14){
         $message_erreur='Entrez un numero à 10 chiffres';
         header("Refresh:4");
     }
@@ -179,7 +201,90 @@ if(isset($_POST['SEND_SMS'])){
             
         }
         else{
+
+            if(isset($_GET['id_gr'])){
+                $id_groupe = $_GET['id_gr'];
+                //header("location:app.php?id=$id");
+
+                //On selectionne les contacts du groupe de contact
+
+                $SelectContactGroupe = $connexion ->query("SELECT contacts.numero_contact
+                FROM groupe_contact
+                JOIN appartenir ON groupe_contact.id_groupe = appartenir.id_groupe
+                JOIN contacts ON appartenir.id_contact = contacts.id_contact
+                WHERE groupe_contact.id_groupe = '$id_groupe';");
+
+                if($SelectContactGroupe->rowCount()*$resultat<$Nmbre_sms_user){
+                    $message_erreur='Vos SMS ne sont pas suffisant !';
+                        //header( $header = 'Refresh:4' );
+                        header("Refresh:4");
+                }
+                else{
+
+                    //Execution du code d'envoi SMS a la liste
+
+
+                    //On uilise la fonction d'envoi SMS
+                        
+                    $config = array(
+                        'clientId' => 'Af8Yljmbf1DtKJiaGajsylicD2p7jNDf',
+                        'clientSecret' => 'GzIIZwnAzRymHlFN'
+                    );
+                    $osms = new Osms($config);
+
+                    //$osms->setVerifyPeerSSL(false);
+
+                    $response = $osms->getTokenFromConsumerKey();
+
+                    if (empty($response['error'])) {
+                        
+                        $_SESSION['token'] = $response['access_token'];
+                        //echo $_SESSION['token'] ;
+                        // echo $osms->getToken();
+                        // echo '<pre>'; print_r($response); echo '</pre>';
+                    }
+
+                    $config = array(
+
+                        'token' => $_SESSION['token']
+
+                    );
+
+                    $osms = new Osms($config);
+
+                    //$osms->setVerifyPeerSSL(false);
+
+
+                    while($row = $SelectContactGroupe->fetch()){
+                        $response = $osms->sendSms(
+                            // sender
+                            'tel:+2250565282962',
+                            // receiver
+                            'tel:'.$row['numero_contact'],
+                            // message
+                            $Message
+                        );
+    
+                    }
+                    
+                    
+
+
+
+
+                }
+                
+
+
+
+
+                
+            }
+            else{
+                header("location:rate.php");
+            }
             //Si il a selectionné une liste de contacts
+            
 
             
         }

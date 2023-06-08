@@ -35,7 +35,7 @@
 
             <div id="b3" class="containerTab" style="display:none;background:lightsteelblue">
             <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
-            <p><i class="fa fa-mobile" aria-hidden="true"></i> +225 2722246838<br><i class="fa fa-mobile" aria-hidden="true"></i> +225 0757927013</p>
+            <p><i class="fa fa-mobile" aria-hidden="true"></i> +225 2722246838  /  0757927013</p>
             <p>info@cloudsteroids.com<br>sales@cloudsteroids.com</p>
 
             </div>

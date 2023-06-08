@@ -66,7 +66,7 @@ $id_user = $_SESSION['id'];
     <div class="nav_vertical">
         <!-- Insertion de l'image -->
             <div class="logo">
-                <img src="../../assets/image/logo_last.png" alt="">
+                <img src="../../assets/image/logo3.png" alt="">
             </div>
          
         <!-- Menu deroulant -->

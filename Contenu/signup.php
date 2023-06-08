@@ -25,7 +25,7 @@ $message_succes='';
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
     <title>Inscription</title>
 </head>
-<body style="background-color:#1072AE;">
+<body style="background-color:#fff;">
         <?php 
             if(isset($message_erreur)){?>  
             <div class="message_erreur"><?php echo($message_erreur);?></div>
@@ -42,7 +42,7 @@ $message_succes='';
 
         <!-- Issertion image  -->
         <div class="image">
-            <img src="../assets/image/sms.png" alt="">
+            <img src="../assets/image/phone.png" alt="">
         </div>
         
 
@@ -88,7 +88,7 @@ $message_succes='';
                 </div>
 
                 <div class="mb-3 form-check">
-                    <label class="form-check-label" for="exampleCheck1">J'accepte les <a href="#">termes et les conditions d'utilisations</a> </label>
+                    <label class="form-check-label" for="exampleCheck1">J'accepte les <a href="#" style="color:#06466d;">termes et les conditions d'utilisations</a> </label>
                     <input type="checkbox" name="checkbox" class="form-check-input" id="exampleCheck1"> 
                 </div>
 
